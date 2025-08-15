@@ -1,6 +1,0 @@
-WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
-MESSAGE "File: E:/_Project/System Digital/T33/T33/src/TestBench/t33_TB.vhd" 
-MESSAGE "Compile Entity "t33_tb"" 
-MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "t33_tb"" 
-MESSAGE "Compile Configuration "TESTBENCH_FOR_t33"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]" 

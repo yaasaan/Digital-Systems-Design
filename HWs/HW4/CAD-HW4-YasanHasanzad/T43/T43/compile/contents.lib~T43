@@ -1,6 +1,0 @@
-43
-~E 1 "../src/T43.vhd" 29 T43
-~A 1 "../src/T43.vhd" 42 T43
-~E 1 "../src/TestBench/t43_TB.vhd" 6 t43_tb
-~A 1 "../src/TestBench/t43_TB.vhd" 9 TB_ARCHITECTURE
-~C 1 "../src/TestBench/t43_TB.vhd" 90 testbench_for_t43

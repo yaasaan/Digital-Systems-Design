@@ -1,1 +1,0 @@
--w -erf E:/_Project/System_Digital/T43/T43/compile/T43.erf -d E:/_Project/System_Digital/T43/T43/compile -s E:/_Project/System_Digital/T43/library.cfg -j E:/_Project/System_Digital/T43/T43/projlib.cfg -work T43 -O3 -e 100 -work T43 -2002 E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd 

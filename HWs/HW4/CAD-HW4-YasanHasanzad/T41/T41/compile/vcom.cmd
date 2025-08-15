@@ -1,1 +1,0 @@
--w -erf E:/_Project/System_Digital/T41/T41/compile/T41.erf -d E:/_Project/System_Digital/T41/T41/compile -s E:/_Project/System_Digital/T41/library.cfg -j E:/_Project/System_Digital/T41/T41/projlib.cfg -work T41 -O3 -e 100 -work T41 -2002 E:/_Project/System_Digital/T41/T41/src/TestBench/t41_TB.vhd 

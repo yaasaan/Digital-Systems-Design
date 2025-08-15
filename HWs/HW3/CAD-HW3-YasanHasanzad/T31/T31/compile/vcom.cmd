@@ -1,1 +1,0 @@
--w -erf "E:/_Project/System Digital/T31/T31/compile/T31.erf" -d "E:/_Project/System Digital/T31/T31/compile" -s "E:/_Project/System Digital/T31/library.cfg" -j "E:/_Project/System Digital/T31/T31/projlib.cfg" -work T31 -O3 -e 100 -work T31 -2002 "E:/_Project/System Digital/T31/T31/src/TestBench/t31_TB.vhd" 

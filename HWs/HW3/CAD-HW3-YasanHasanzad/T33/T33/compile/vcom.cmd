@@ -1,1 +1,0 @@
--w -erf "E:/_Project/System Digital/T33/T33/compile/T33.erf" -d "E:/_Project/System Digital/T33/T33/compile" -s "E:/_Project/System Digital/T33/library.cfg" -j "E:/_Project/System Digital/T33/T33/projlib.cfg" -work T33 -O3 -e 100 -work T33 -2002 "E:/_Project/System Digital/T33/T33/src/TestBench/t33_TB.vhd" 

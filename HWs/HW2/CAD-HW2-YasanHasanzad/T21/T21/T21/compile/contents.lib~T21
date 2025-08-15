@@ -1,6 +1,0 @@
-20
-~E 1 "../src/T21.vhd" 29 T21
-~A 1 "../src/T21.vhd" 41 T21
-~E 1 "../src/TestBench/t21_TB.vhd" 7 t21_tb
-~A 1 "../src/TestBench/t21_TB.vhd" 10 TB_ARCHITECTURE
-~C 1 "../src/TestBench/t21_TB.vhd" 44 testbench_for_t21

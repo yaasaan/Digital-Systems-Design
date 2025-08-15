@@ -1,6 +1,0 @@
-16
-~E 1 "../src/T32.vhd" 29 T32
-~A 1 "../src/T32.vhd" 41 T32
-~E 1 "../src/TestBench/t32_TB.vhd" 7 t32_tb
-~A 1 "../src/TestBench/t32_TB.vhd" 10 TB_ARCHITECTURE
-~C 1 "../src/TestBench/t32_TB.vhd" 53 testbench_for_t32
