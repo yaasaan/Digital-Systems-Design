@@ -1,0 +1,6 @@
+11
+~E 1 "../src/T22.vhd" 32 T22
+~A 1 "../src/T22.vhd" 43 T22
+~E 1 "../src/TestBench/t22_TB.vhd" 7 t22_tb
+~A 1 "../src/TestBench/t22_TB.vhd" 10 TB_ARCHITECTURE
+~C 1 "../src/TestBench/t22_TB.vhd" 48 testbench_for_t22

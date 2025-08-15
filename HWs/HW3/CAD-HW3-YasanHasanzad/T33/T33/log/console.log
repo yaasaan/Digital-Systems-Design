@@ -1,0 +1,303 @@
+# Design: Design T33 already active.
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -O3 -e 100 -work T33 -2002  $dsn/src/T33.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System Digital/T33/T33/src/T33.vhd
+# Compile Entity "T33"
+# Compile Architecture "T33" of Entity "T33"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => T33
+# File: E:/_Project/System Digital/T33/T33/src/T33.vhd
+# Compile Architecture "T33" of Entity "T33"
+# Error: COMP96_0393: T33.vhd : (44, 18): Cannot read output : "b".
+# Error: COMP96_0393: T33.vhd : (57, 13): Cannot read output : "a".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work T33 -2002  $dsn/src/T33.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System Digital/T33/T33/src/T33.vhd
+# Compile Entity "T33"
+# Compile Architecture "T33" of Entity "T33"
+# Error: COMP96_0019: T33.vhd : (50, 6): Keyword 'process' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work T33 -2002  $dsn/src/T33.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System Digital/T33/T33/src/T33.vhd
+# Compile Entity "T33"
+# Compile Architecture "T33" of Entity "T33"
+# Error: COMP96_0264: T33.vhd : (45, 10): Signal "b" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: T33.vhd : (48, 20): Cannot read output : "b".
+# Error: COMP96_0393: T33.vhd : (65, 13): Cannot read output : "a".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work T33 -2002  $dsn/src/T33.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System Digital/T33/T33/src/T33.vhd
+# Compile Entity "T33"
+# Compile Architecture "T33" of Entity "T33"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work T33 -2002  $dsn/src/TestBench/t33_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System Digital/T33/T33/src/TestBench/t33_TB.vhd
+# Compile Entity "t33_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t33_tb"
+# Error: DAGGEN_0004: TestBench/t33_TB.vhd : (47, 74): Next waveform time expression is equal to or less than the current one.
+# Compile Configuration "TESTBENCH_FOR_t33"
+# Error: COMP96_0209: TestBench/t33_TB.vhd : (53, 6): Unknown architecture name used in configuration declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work T33 -2002  $dsn/src/TestBench/t33_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System Digital/T33/T33/src/TestBench/t33_TB.vhd
+# Compile Entity "t33_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t33_tb"
+# Compile Configuration "TESTBENCH_FOR_t33"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\T33.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System Digital/T33/T33/src/T33.vhd
+# Compile Entity "T33"
+# Compile Architecture "T33" of Entity "T33"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+comp -include "$dsn\src\TestBench\t33_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System Digital/T33/T33/src/TestBench/t33_TB.vhd
+# Compile Entity "t33_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t33_tb"
+# Compile Configuration "TESTBENCH_FOR_t33"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+asim +access +r TESTBENCH_FOR_t33 
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6460 kB (elbread=427 elab2=5893 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\_Project\System Digital\T33\T33\src\wave.asdb
+#  12:30 AM, Monday, May 9, 2022
+#  Simulation has been initialized
+wave 
+wave -noreg clk
+wave -noreg reset
+wave -noreg x
+wave -noreg a
+wave -noreg b
+wave -noreg z
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\t33_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_t33 
+# 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System Digital/T33/T33/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# 1 object(s) traced.
+# 1 object(s) traced.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# 1 object(s) traced.
+# 1 object(s) traced.
+acom -O3 -e 100 -work T33 -2002  $dsn/src/TestBench/t33_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System Digital/T33/T33/src/TestBench/t33_TB.vhd
+# Compile Entity "t33_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t33_tb"
+# Compile Configuration "TESTBENCH_FOR_t33"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\T33.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System Digital/T33/T33/src/T33.vhd
+# Compile Entity "T33"
+# Compile Architecture "T33" of Entity "T33"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+comp -include "$dsn\src\TestBench\t33_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System Digital/T33/T33/src/TestBench/t33_TB.vhd
+# Compile Entity "t33_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t33_tb"
+# Compile Configuration "TESTBENCH_FOR_t33"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+asim +access +r TESTBENCH_FOR_t33 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6460 kB (elbread=427 elab2=5894 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\_Project\System Digital\T33\T33\src\wave.asdb
+#  12:36 AM, Monday, May 9, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System Digital/T33/T33/src/wave.asdb'.
+wave 
+wave -noreg clk
+wave -noreg reset
+wave -noreg x
+wave -noreg a
+wave -noreg b
+wave -noreg z
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\t33_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_t33 
+# 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System Digital/T33/T33/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work T33 -2002  $dsn/src/T33.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System Digital/T33/T33/src/T33.vhd
+# Compile Entity "T33"
+# Compile Architecture "T33" of Entity "T33"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work T33 -2002  $dsn/src/TestBench/t33_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System Digital/T33/T33/src/TestBench/t33_TB.vhd
+# Compile Entity "t33_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t33_tb"
+# Compile Configuration "TESTBENCH_FOR_t33"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\T33.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System Digital/T33/T33/src/T33.vhd
+# Compile Entity "T33"
+# Compile Architecture "T33" of Entity "T33"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+comp -include "$dsn\src\TestBench\t33_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System Digital/T33/T33/src/TestBench/t33_TB.vhd
+# Compile Entity "t33_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t33_tb"
+# Compile Configuration "TESTBENCH_FOR_t33"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_t33 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6460 kB (elbread=427 elab2=5894 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\_Project\System Digital\T33\T33\src\wave.asdb
+#  12:40 AM, Monday, May 9, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System Digital/T33/T33/src/wave.asdb'.
+wave 
+wave -noreg clk
+wave -noreg reset
+wave -noreg x
+wave -noreg a
+wave -noreg b
+wave -noreg z
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\t33_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_t33 
+# 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System Digital/T33/T33/src/wave.asdb'.
+run 40ns
+# KERNEL: stopped at time: 40 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work T33 -2002  $dsn/src/TestBench/t33_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System Digital/T33/T33/src/TestBench/t33_TB.vhd
+# Compile Entity "t33_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t33_tb"
+# Compile Configuration "TESTBENCH_FOR_t33"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\T33.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System Digital/T33/T33/src/T33.vhd
+# Compile Entity "T33"
+# Compile Architecture "T33" of Entity "T33"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+comp -include "$dsn\src\TestBench\t33_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System Digital/T33/T33/src/TestBench/t33_TB.vhd
+# Compile Entity "t33_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t33_tb"
+# Compile Configuration "TESTBENCH_FOR_t33"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+asim +access +r TESTBENCH_FOR_t33 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6460 kB (elbread=427 elab2=5894 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\_Project\System Digital\T33\T33\src\wave.asdb
+#  12:41 AM, Monday, May 9, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System Digital/T33/T33/src/wave.asdb'.
+wave 
+wave -noreg clk
+wave -noreg reset
+wave -noreg x
+wave -noreg a
+wave -noreg b
+wave -noreg z
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\t33_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_t33 
+# 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System Digital/T33/T33/src/wave.asdb'.
+run 40ns
+# KERNEL: stopped at time: 40 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Waveform file 'E:/_Project/SystemDigital/T33/T33/src/untitled.awc' connected to 'E:/_Project/SystemDigital/T33/T33/src/untitled.asdb'.
+# Adding file E:\_Project\SystemDigital\T33\T33\src\untitled.asdb ... Done
+# Adding file E:\_Project\SystemDigital\T33\T33\src\untitled.awc ... Done

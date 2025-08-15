@@ -1,0 +1,40 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=T23
+
+[Library]
+T23=.\T23\T23.lib
+
+[$LibMap$]
+T23=.
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Files]
+/T23.vhd=-1
+TestBench/t23_TB.vhd=-1
+TestBench/t23_TB_runtest.do=-1
+
+[Files.Data]
+.\src\T23.vhd=VHDL Source Code
+.\src\TestBench\t23_TB.vhd=VHDL Test Bench
+.\src\TestBench\t23_TB_runtest.do=Macro
+
+[Groups]
+TestBench=1
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=t23_tb|testbench_for_t23|1 
+ShowHide=ShowTopLevel
+Selected=

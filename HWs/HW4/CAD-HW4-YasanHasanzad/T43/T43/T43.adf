@@ -1,0 +1,46 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=T43
+
+[Library]
+T43=.\T43\T43.lib
+
+[$LibMap$]
+T43=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Groups]
+TestBench=1
+
+[Files]
+/T43.vhd=-1
+/untitled.asdb=-1
+/untitled.awc=-1
+TestBench/t43_TB.vhd=-1
+TestBench/t43_TB_runtest.do=-1
+
+[Files.Data]
+.\src\T43.vhd=VHDL Source Code
+.\src\untitled.asdb=Accelerated Waveform File
+.\src\untitled.awc=Accelerated Waveform Configuration
+.\src\TestBench\t43_TB.vhd=VHDL Test Bench
+.\src\TestBench\t43_TB_runtest.do=Macro
+
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=t43_tb|testbench_for_t43|1 
+ShowHide=ShowTopLevel
+Selected=

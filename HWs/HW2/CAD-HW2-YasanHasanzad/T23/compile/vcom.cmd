@@ -1,0 +1,1 @@
+-w -erf "E:/_Project/System Digital/T23/compile/T23.erf" -d "E:/_Project/System Digital/T23/compile" -s "E:/_Project/System Digital/T23/library.cfg" -j "E:/_Project/System Digital/T23/projlib.cfg" -work T23 -O3 -e 100 -work T23 -2002 "E:/_Project/System Digital/T23/src/T23.vhd" 

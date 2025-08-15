@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\yasan\Desktop\Project\CADProject\CAD971Test.ncd
+OUTFILE=C:\Users\yasan\Desktop\Project\CADProject\CAD971Test.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=C:\Users\yasan\Desktop\Project\CADProject
+LICENSE=WebPack
+USER_INFO=__0_0_0

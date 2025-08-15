@@ -1,0 +1,6 @@
+16
+~E 1 "../src/T33.vhd" 29 T33
+~A 1 "../src/T33.vhd" 39 T33
+~E 1 "../src/TestBench/t33_TB.vhd" 7 t33_tb
+~A 1 "../src/TestBench/t33_TB.vhd" 10 TB_ARCHITECTURE
+~C 1 "../src/TestBench/t33_TB.vhd" 53 testbench_for_t33

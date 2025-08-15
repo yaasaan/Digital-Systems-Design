@@ -1,0 +1,46 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=T33
+
+[Library]
+T33=.\T33\T33.lib
+
+[$LibMap$]
+T33=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Groups]
+TestBench=1
+
+[Files]
+/T33.vhd=-1
+/..\..\..\..\SystemDigital\T33\T33\src\untitled.asdb=-1
+/..\..\..\..\SystemDigital\T33\T33\src\untitled.awc=-1
+TestBench/t33_TB.vhd=-1
+TestBench/t33_TB_runtest.do=-1
+
+[Files.Data]
+.\src\T33.vhd=VHDL Source Code
+.\..\..\..\SystemDigital\T33\T33\src\untitled.asdb=Accelerated Waveform File
+.\..\..\..\SystemDigital\T33\T33\src\untitled.awc=Accelerated Waveform Configuration
+.\src\TestBench\t33_TB.vhd=VHDL Test Bench
+.\src\TestBench\t33_TB_runtest.do=Macro
+
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=t33_tb|testbench_for_t33|1 
+ShowHide=ShowTopLevel
+Selected=

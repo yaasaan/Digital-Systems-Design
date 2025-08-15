@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\yasan\Desktop\Manaabe\CAD_Tool\CAD_VGA_Xilinx\impact.xsl
+OUTFILE=C:\Users\yasan\Desktop\Manaabe\CAD_Tool\CAD_VGA_Xilinx\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=C:\Users\yasan\Desktop\Manaabe\CAD_Tool\CAD_VGA_Xilinx
+LICENSE=iMPACT
+USER_INFO=iMPACT

@@ -1,0 +1,1 @@
+-w -erf "E:/_Project/System Digital/T21/T21/T21/compile/T21.erf" -d "E:/_Project/System Digital/T21/T21/T21/compile" -s "E:/_Project/System Digital/T21/T21/library.cfg" -j "E:/_Project/System Digital/T21/T21/T21/projlib.cfg" -work T21 -O3 -e 100 -work T21 -2002 "E:/_Project/System Digital/T21/T21/T21/src/TestBench/t21_TB.vhd" 

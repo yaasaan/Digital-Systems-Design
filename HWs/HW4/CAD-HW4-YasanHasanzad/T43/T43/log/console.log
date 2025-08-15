@@ -1,0 +1,887 @@
+# Design: Design T43 already active.
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -O3 -e 100 -work T43 -2002  $dsn/src/T43.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Error: COMP96_0018: T43.vhd : (37, 2): Identifier expected.
+# Error: COMP96_0019: T43.vhd : (59, 6): Keyword 'process' expected.
+# Error: COMP96_0049: T43.vhd : (67, 20): Syntax error in expression.
+# Error: COMP96_0019: T43.vhd : (104, 6): Keyword 'if' expected.
+# Error: COMP96_0015: T43.vhd : (104, 6): ';' expected.
+# Error: COMP96_0019: T43.vhd : (112, 5): Keyword 'process' expected.
+# Error: COMP96_0019: T43.vhd : (113, 0): Keyword 'end' expected.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  2.0 [s]
+acom -reorder -O3 -e 100 -work T43 -2002  $dsn/src/T43.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Error: COMP96_0019: T43.vhd : (59, 6): Keyword 'process' expected.
+# Error: COMP96_0049: T43.vhd : (67, 20): Syntax error in expression.
+# Error: COMP96_0019: T43.vhd : (104, 6): Keyword 'if' expected.
+# Error: COMP96_0015: T43.vhd : (104, 6): ';' expected.
+# Error: COMP96_0019: T43.vhd : (112, 5): Keyword 'process' expected.
+# Error: COMP96_0019: T43.vhd : (113, 0): Keyword 'end' expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work T43 -2002  $dsn/src/T43.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Error: COMP96_0049: T43.vhd : (67, 20): Syntax error in expression.
+# Error: COMP96_0019: T43.vhd : (104, 6): Keyword 'if' expected.
+# Error: COMP96_0015: T43.vhd : (104, 6): ';' expected.
+# Error: COMP96_0019: T43.vhd : (112, 5): Keyword 'process' expected.
+# Error: COMP96_0019: T43.vhd : (113, 0): Keyword 'end' expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work T43 -2002  $dsn/src/T43.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Error: COMP96_0019: T43.vhd : (104, 6): Keyword 'if' expected.
+# Error: COMP96_0015: T43.vhd : (104, 6): ';' expected.
+# Error: COMP96_0019: T43.vhd : (112, 5): Keyword 'process' expected.
+# Error: COMP96_0019: T43.vhd : (113, 0): Keyword 'end' expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work T43 -2002  $dsn/src/T43.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Error: COMP96_0303: T43.vhd : (82, 9): Each choice in a case statement can be represented only once.
+# Error: COMP96_0077: T43.vhd : (92, 30): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0079: T43.vhd : (92, 19): Invalid aggregate.
+# Error: COMP96_0077: T43.vhd : (92, 19): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: T43.vhd : (98, 20): Assignment target incompatible with right side. Cannot convert 't43_state' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: T43.vhd : (101, 31): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0079: T43.vhd : (101, 20): Invalid aggregate.
+# Error: COMP96_0077: T43.vhd : (101, 20): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work T43 -2002  $dsn/src/T43.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Error: COMP96_0077: T43.vhd : (92, 30): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0079: T43.vhd : (92, 19): Invalid aggregate.
+# Error: COMP96_0077: T43.vhd : (92, 19): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: T43.vhd : (98, 20): Assignment target incompatible with right side. Cannot convert 't43_state' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: T43.vhd : (101, 31): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0079: T43.vhd : (101, 20): Invalid aggregate.
+# Error: COMP96_0077: T43.vhd : (101, 20): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work T43 -2002  $dsn/src/T43.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Error: COMP96_0077: T43.vhd : (92, 30): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0079: T43.vhd : (92, 19): Invalid aggregate.
+# Error: COMP96_0077: T43.vhd : (92, 19): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0617: T43.vhd : (96, 20): Assignment target incompatible with right side. Cannot convert 'STD_LOGIC_VECTOR' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0617: T43.vhd : (98, 20): Assignment target incompatible with right side. Cannot convert 't43_state' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0077: T43.vhd : (101, 31): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0079: T43.vhd : (101, 20): Invalid aggregate.
+# Error: COMP96_0077: T43.vhd : (101, 20): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0617: T43.vhd : (108, 13): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC_VECTOR' to 'STD_LOGIC_VECTOR'.
+# Compile failure 9 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work T43 -2002  $dsn/src/T43.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Error: COMP96_0077: T43.vhd : (92, 30): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0079: T43.vhd : (92, 19): Invalid aggregate.
+# Error: COMP96_0077: T43.vhd : (92, 19): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: T43.vhd : (98, 20): Assignment target incompatible with right side. Cannot convert 't43_state' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: T43.vhd : (101, 31): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0079: T43.vhd : (101, 20): Invalid aggregate.
+# Error: COMP96_0077: T43.vhd : (101, 20): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work T43 -2002  $dsn/src/T43.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Error: COMP96_0077: T43.vhd : (92, 30): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0079: T43.vhd : (92, 19): Invalid aggregate.
+# Error: COMP96_0077: T43.vhd : (92, 19): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: T43.vhd : (101, 31): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0079: T43.vhd : (101, 20): Invalid aggregate.
+# Error: COMP96_0077: T43.vhd : (101, 20): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work T43 -2002  $dsn/src/T43.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Error: COMP96_0077: T43.vhd : (101, 31): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0079: T43.vhd : (101, 20): Invalid aggregate.
+# Error: COMP96_0077: T43.vhd : (101, 20): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work T43 -2002  $dsn/src/T43.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work T43 -2002  $dsn/src/TestBench/t43_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Error: COMP96_0077: TestBench/t43_TB.vhd : (58, 11): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Error: COMP96_0209: TestBench/t43_TB.vhd : (73, 6): Unknown architecture name used in configuration declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work T43 -2002  $dsn/src/TestBench/t43_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work T43 -2002  $dsn/src/TestBench/t43_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\T43.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+comp -include "$dsn\src\TestBench\t43_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+asim +access +r TESTBENCH_FOR_t43 
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6561 kB (elbread=427 elab2=5994 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\_Project\System_Digital\T43\T43\src\wave.asdb
+#  1:13 AM, Thursday, May 26, 2022
+#  Simulation has been initialized
+wave 
+wave -noreg clk
+wave -noreg reset
+wave -noreg x
+wave -noreg datain
+wave -noreg dataout
+wave -noreg valid
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\t43_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_t43 
+# 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System_Digital/T43/T43/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+acom -O3 -e 100 -work T43 -2002  $dsn/src/TestBench/t43_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\T43.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\t43_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_t43 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6561 kB (elbread=427 elab2=5994 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\_Project\System_Digital\T43\T43\src\wave.asdb
+#  1:14 AM, Thursday, May 26, 2022
+#  Simulation has been initialized
+wave 
+wave -noreg clk
+wave -noreg reset
+wave -noreg x
+wave -noreg datain
+wave -noreg dataout
+wave -noreg valid
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\t43_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_t43 
+# 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System_Digital/T43/T43/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+acom -O3 -e 100 -work T43 -2002  $dsn/src/TestBench/t43_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\T43.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\t43_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_t43 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6561 kB (elbread=427 elab2=5994 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\_Project\System_Digital\T43\T43\src\wave.asdb
+#  1:15 AM, Thursday, May 26, 2022
+#  Simulation has been initialized
+wave 
+wave -noreg clk
+wave -noreg reset
+wave -noreg x
+wave -noreg datain
+wave -noreg dataout
+wave -noreg valid
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\t43_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_t43 
+# 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System_Digital/T43/T43/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+acom -O3 -e 100 -work T43 -2002  $dsn/src/TestBench/t43_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\T43.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\t43_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_t43 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6561 kB (elbread=427 elab2=5994 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\_Project\System_Digital\T43\T43\src\wave.asdb
+#  1:18 AM, Thursday, May 26, 2022
+#  Simulation has been initialized
+wave 
+wave -noreg clk
+wave -noreg reset
+wave -noreg x
+wave -noreg datain
+wave -noreg dataout
+wave -noreg valid
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\t43_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_t43 
+# 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System_Digital/T43/T43/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+SetActiveLib -work
+comp -include "$dsn\src\T43.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\t43_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_t43 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6561 kB (elbread=427 elab2=5994 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\_Project\System_Digital\T43\T43\src\wave.asdb
+#  1:18 AM, Thursday, May 26, 2022
+#  Simulation has been initialized
+wave 
+wave -noreg clk
+wave -noreg reset
+wave -noreg x
+wave -noreg datain
+wave -noreg dataout
+wave -noreg valid
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\t43_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_t43 
+# 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System_Digital/T43/T43/src/wave.asdb'.
+# 1 object(s) traced.
+# 1 object(s) traced.
+# 1 object(s) traced.
+# 1 object(s) traced.
+# 1 object(s) traced.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+acom -O3 -e 100 -work T43 -2002  $dsn/src/T43.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work T43 -2002  $dsn/src/TestBench/t43_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+SetActiveLib -work
+comp -include "$dsn\src\T43.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\t43_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_t43 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6561 kB (elbread=427 elab2=5994 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\_Project\System_Digital\T43\T43\src\wave.asdb
+#  1:26 AM, Thursday, May 26, 2022
+#  Simulation has been initialized
+wave 
+wave -noreg clk
+wave -noreg reset
+wave -noreg x
+wave -noreg datain
+wave -noreg dataout
+wave -noreg valid
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\t43_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_t43 
+# 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System_Digital/T43/T43/src/wave.asdb'.
+# 1 object(s) traced.
+# 1 object(s) traced.
+# 1 object(s) traced.
+# 1 object(s) traced.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+acom -O3 -e 100 -work T43 -2002  $dsn/src/TestBench/t43_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Error: DAGGEN_0004: TestBench/t43_TB.vhd : (46, 26): Next waveform time expression is equal to or less than the current one.
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work T43 -2002  $dsn/src/TestBench/t43_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Error: DAGGEN_0004: TestBench/t43_TB.vhd : (46, 26): Next waveform time expression is equal to or less than the current one.
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work T43 -2002  $dsn/src/T43.vhd $dsn/src/TestBench/t43_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\T43.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+comp -include "$dsn\src\TestBench\t43_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+asim +access +r TESTBENCH_FOR_t43 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6561 kB (elbread=427 elab2=5994 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\_Project\System_Digital\T43\T43\src\wave.asdb
+#  1:29 AM, Thursday, May 26, 2022
+#  Simulation has been initialized
+wave 
+wave -noreg clk
+wave -noreg reset
+wave -noreg x
+wave -noreg datain
+wave -noreg dataout
+wave -noreg valid
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\t43_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_t43 
+# 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System_Digital/T43/T43/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+acom -O3 -e 100 -work T43 -2002  $dsn/src/TestBench/t43_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\T43.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+comp -include "$dsn\src\TestBench\t43_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_t43 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6561 kB (elbread=427 elab2=5994 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\_Project\System_Digital\T43\T43\src\wave.asdb
+#  1:31 AM, Thursday, May 26, 2022
+#  Simulation has been initialized
+wave 
+wave -noreg clk
+wave -noreg reset
+wave -noreg x
+wave -noreg datain
+wave -noreg dataout
+wave -noreg valid
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\t43_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_t43 
+# 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System_Digital/T43/T43/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+acom -O3 -e 100 -work T43 -2002  $dsn/src/T43.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work T43 -2002  $dsn/src/TestBench/t43_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\T43.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+comp -include "$dsn\src\TestBench\t43_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_t43 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6561 kB (elbread=427 elab2=5994 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\_Project\System_Digital\T43\T43\src\wave.asdb
+#  1:33 AM, Thursday, May 26, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System_Digital/T43/T43/src/wave.asdb'.
+wave 
+wave -noreg clk
+wave -noreg reset
+wave -noreg x
+wave -noreg datain
+wave -noreg dataout
+wave -noreg valid
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\t43_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_t43 
+# 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System_Digital/T43/T43/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+acom -O3 -e 100 -work T43 -2002  $dsn/src/T43.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work T43 -2002  $dsn/src/TestBench/t43_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\T43.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\t43_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+asim +access +r TESTBENCH_FOR_t43 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6560 kB (elbread=427 elab2=5994 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\_Project\System_Digital\T43\T43\src\wave.asdb
+#  1:34 AM, Thursday, May 26, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System_Digital/T43/T43/src/wave.asdb'.
+wave 
+wave -noreg clk
+wave -noreg reset
+wave -noreg x
+wave -noreg datain
+wave -noreg dataout
+wave -noreg valid
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\t43_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_t43 
+# 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System_Digital/T43/T43/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+acom -O3 -e 100 -work T43 -2002  $dsn/src/TestBench/t43_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\T43.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+comp -include "$dsn\src\TestBench\t43_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_t43 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6560 kB (elbread=427 elab2=5994 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\_Project\System_Digital\T43\T43\src\wave.asdb
+#  1:35 AM, Thursday, May 26, 2022
+#  Simulation has been initialized
+wave 
+wave -noreg clk
+wave -noreg reset
+wave -noreg x
+wave -noreg datain
+wave -noreg dataout
+wave -noreg valid
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\t43_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_t43 
+# 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System_Digital/T43/T43/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+SetActiveLib -work
+comp -include "$dsn\src\T43.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/T43.vhd
+# Compile Entity "T43"
+# Compile Architecture "T43" of Entity "T43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\t43_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:/_Project/System_Digital/T43/T43/src/TestBench/t43_TB.vhd
+# Compile Entity "t43_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "t43_tb"
+# Compile Configuration "TESTBENCH_FOR_t43"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+asim +access +r TESTBENCH_FOR_t43 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6560 kB (elbread=427 elab2=5994 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\_Project\System_Digital\T43\T43\src\wave.asdb
+#  1:35 AM, Thursday, May 26, 2022
+#  Simulation has been initialized
+wave 
+wave -noreg clk
+wave -noreg reset
+wave -noreg x
+wave -noreg datain
+wave -noreg dataout
+wave -noreg valid
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\t43_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_t43 
+# 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/_Project/System_Digital/T43/T43/src/wave.asdb'.
+# 1 object(s) traced.
+# 1 object(s) traced.
+# 1 object(s) traced.
+# 1 object(s) traced.
+# 1 object(s) traced.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# Waveform file 'E:/_Project/System_Digital/T43/T43/src/untitled.awc' connected to 'E:/_Project/System_Digital/T43/T43/src/untitled.asdb'.
+# Adding file E:\_Project\System_Digital\T43\T43\src\untitled.asdb ... Done
+# Adding file E:\_Project\System_Digital\T43\T43\src\untitled.awc ... Done

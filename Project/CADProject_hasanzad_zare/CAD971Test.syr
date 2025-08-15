@@ -1,0 +1,1874 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: CAD971Test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CAD971Test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CAD971Test"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : CAD971Test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\yasan\Desktop\Project\CADProject\VGA_Square.vhd" into library work
+Parsing entity <VGA_Square>.
+Parsing architecture <Behavioral> of entity <vga_square>.
+Parsing VHDL file "C:\Users\yasan\Desktop\Project\CADProject\VGA_controller.vhd" into library work
+Parsing entity <VGA_controller>.
+Parsing architecture <Behavioral> of entity <vga_controller>.
+Parsing VHDL file "C:\Users\yasan\Desktop\Project\CADProject\CAD971Test.vhd" into library work
+Parsing entity <CAD971Test>.
+Parsing architecture <CAD971Test> of entity <cad971test>.
+WARNING:HDLCompiler:946 - "C:\Users\yasan\Desktop\Project\CADProject\CAD971Test.vhd" Line 81: Actual for formal port reset is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\yasan\Desktop\Project\CADProject\CAD971Test.vhd" Line 91: Actual for formal port reset is neither a static name nor a globally static expression
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <CAD971Test> (architecture <CAD971Test>) from library <work>.
+
+Elaborating entity <VGA_controller> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <VGA_Square> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <CAD971Test>.
+    Related source file is "C:\Users\yasan\Desktop\Project\CADProject\CAD971Test.vhd".
+    Summary:
+	no macro.
+Unit <CAD971Test> synthesized.
+
+Synthesizing Unit <VGA_controller>.
+    Related source file is "C:\Users\yasan\Desktop\Project\CADProject\VGA_controller.vhd".
+    Found 11-bit register for signal <CurrentVPos>.
+    Found 11-bit register for signal <CurrentHPos>.
+    Found 11-bit adder for signal <CurrentHPos[10]_GND_6_o_add_1_OUT> created at line 48.
+    Found 11-bit adder for signal <CurrentVPos[10]_GND_6_o_add_3_OUT> created at line 51.
+    Found 11-bit subtractor for signal <GND_6_o_GND_6_o_sub_20_OUT<10:0>> created at line 79.
+    Found 11-bit subtractor for signal <GND_6_o_GND_6_o_sub_17_OUT<10:0>> created at line 76.
+    Found 11-bit comparator greater for signal <CurrentHPos[10]_GND_6_o_LessThan_1_o> created at line 47
+    Found 11-bit comparator greater for signal <CurrentVPos[10]_GND_6_o_LessThan_3_o> created at line 50
+    Found 11-bit comparator lessequal for signal <CurrentHPos[10]_GND_6_o_LessThan_10_o> created at line 61
+    Found 11-bit comparator lessequal for signal <CurrentVPos[10]_GND_6_o_LessThan_11_o> created at line 64
+    Found 11-bit comparator lessequal for signal <n0012> created at line 67
+    Found 11-bit comparator greater for signal <CurrentHPos[10]_GND_6_o_LessThan_13_o> created at line 67
+    Found 11-bit comparator lessequal for signal <n0017> created at line 70
+    Found 11-bit comparator greater for signal <CurrentVPos[10]_GND_6_o_LessThan_15_o> created at line 70
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+	inferred   7 Multiplexer(s).
+Unit <VGA_controller> synthesized.
+
+Synthesizing Unit <VGA_Square>.
+    Related source file is "C:\Users\yasan\Desktop\Project\CADProject\VGA_Square.vhd".
+WARNING:Xst:647 - Input <SW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <prescalerspeed_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <prescalerspeed> has been removed
+    Register <prescalerspeed_dummy_dummy_dummy_dummy> equivalent to <prescalerspeed> has been removed
+    Register <prescalerspeed_dummy_dummy_dummy> equivalent to <prescalerspeed> has been removed
+    Register <prescalerspeed_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <prescalerspeed_dummy> has been removed
+    Register <prescalerspeed_dummy_dummy_dummy_dummy_dummy> equivalent to <prescalerspeed_dummy> has been removed
+    Register <prescalerspeed_dummy_dummy> equivalent to <prescalerspeed_dummy> has been removed
+    Found 1-bit register for signal <gameEnded>.
+    Found 1-bit register for signal <win>.
+    Found 1-bit register for signal <enable_apple>.
+    Found 1-bit register for signal <gameStart>.
+    Found 1-bit register for signal <init>.
+    Found 4-bit register for signal <apple_randy_next>.
+    Found 4-bit register for signal <snake_randx_next>.
+    Found 1-bit register for signal <prescalerspeed>.
+    Found 5-bit register for signal <snake_randy_next>.
+    Found 5-bit register for signal <apple_randx_next>.
+    Found 4-bit register for signal <sevensegmentStates>.
+    Found 26-bit register for signal <countForoneSeccond>.
+    Found 32-bit register for signal <times>.
+    Found 32-bit register for signal <pseudo_rand1>.
+    Found 4-bit register for signal <time_10>.
+    Found 4-bit register for signal <time_01>.
+    Found 4-bit register for signal <point_10>.
+    Found 4-bit register for signal <point_01>.
+    Found 4-bit register for signal <point_next>.
+    Found 31-bit register for signal <Prescaler>.
+    Found 2-bit register for signal <snake_dir>.
+    Found 2-bit register for signal <ground<0><0>>.
+    Found 2-bit register for signal <ground<0><1>>.
+    Found 2-bit register for signal <ground<0><2>>.
+    Found 2-bit register for signal <ground<0><3>>.
+    Found 2-bit register for signal <ground<0><4>>.
+    Found 2-bit register for signal <ground<0><5>>.
+    Found 2-bit register for signal <ground<0><6>>.
+    Found 2-bit register for signal <ground<0><7>>.
+    Found 2-bit register for signal <ground<0><8>>.
+    Found 2-bit register for signal <ground<0><9>>.
+    Found 2-bit register for signal <ground<0><10>>.
+    Found 2-bit register for signal <ground<0><11>>.
+    Found 2-bit register for signal <ground<0><12>>.
+    Found 2-bit register for signal <ground<0><13>>.
+    Found 2-bit register for signal <ground<0><14>>.
+    Found 2-bit register for signal <ground<0><15>>.
+    Found 2-bit register for signal <ground<0><16>>.
+    Found 2-bit register for signal <ground<0><17>>.
+    Found 2-bit register for signal <ground<0><18>>.
+    Found 2-bit register for signal <ground<0><19>>.
+    Found 2-bit register for signal <ground<1><0>>.
+    Found 2-bit register for signal <ground<1><1>>.
+    Found 2-bit register for signal <ground<1><2>>.
+    Found 2-bit register for signal <ground<1><3>>.
+    Found 2-bit register for signal <ground<1><4>>.
+    Found 2-bit register for signal <ground<1><5>>.
+    Found 2-bit register for signal <ground<1><6>>.
+    Found 2-bit register for signal <ground<1><7>>.
+    Found 2-bit register for signal <ground<1><8>>.
+    Found 2-bit register for signal <ground<1><9>>.
+    Found 2-bit register for signal <ground<1><10>>.
+    Found 2-bit register for signal <ground<1><11>>.
+    Found 2-bit register for signal <ground<1><12>>.
+    Found 2-bit register for signal <ground<1><13>>.
+    Found 2-bit register for signal <ground<1><14>>.
+    Found 2-bit register for signal <ground<1><15>>.
+    Found 2-bit register for signal <ground<1><16>>.
+    Found 2-bit register for signal <ground<1><17>>.
+    Found 2-bit register for signal <ground<1><18>>.
+    Found 2-bit register for signal <ground<1><19>>.
+    Found 2-bit register for signal <ground<2><0>>.
+    Found 2-bit register for signal <ground<2><1>>.
+    Found 2-bit register for signal <ground<2><2>>.
+    Found 2-bit register for signal <ground<2><3>>.
+    Found 2-bit register for signal <ground<2><4>>.
+    Found 2-bit register for signal <ground<2><5>>.
+    Found 2-bit register for signal <ground<2><6>>.
+    Found 2-bit register for signal <ground<2><7>>.
+    Found 2-bit register for signal <ground<2><8>>.
+    Found 2-bit register for signal <ground<2><9>>.
+    Found 2-bit register for signal <ground<2><10>>.
+    Found 2-bit register for signal <ground<2><11>>.
+    Found 2-bit register for signal <ground<2><12>>.
+    Found 2-bit register for signal <ground<2><13>>.
+    Found 2-bit register for signal <ground<2><14>>.
+    Found 2-bit register for signal <ground<2><15>>.
+    Found 2-bit register for signal <ground<2><16>>.
+    Found 2-bit register for signal <ground<2><17>>.
+    Found 2-bit register for signal <ground<2><18>>.
+    Found 2-bit register for signal <ground<2><19>>.
+    Found 2-bit register for signal <ground<3><0>>.
+    Found 2-bit register for signal <ground<3><1>>.
+    Found 2-bit register for signal <ground<3><2>>.
+    Found 2-bit register for signal <ground<3><3>>.
+    Found 2-bit register for signal <ground<3><4>>.
+    Found 2-bit register for signal <ground<3><5>>.
+    Found 2-bit register for signal <ground<3><6>>.
+    Found 2-bit register for signal <ground<3><7>>.
+    Found 2-bit register for signal <ground<3><8>>.
+    Found 2-bit register for signal <ground<3><9>>.
+    Found 2-bit register for signal <ground<3><10>>.
+    Found 2-bit register for signal <ground<3><11>>.
+    Found 2-bit register for signal <ground<3><12>>.
+    Found 2-bit register for signal <ground<3><13>>.
+    Found 2-bit register for signal <ground<3><14>>.
+    Found 2-bit register for signal <ground<3><15>>.
+    Found 2-bit register for signal <ground<3><16>>.
+    Found 2-bit register for signal <ground<3><17>>.
+    Found 2-bit register for signal <ground<3><18>>.
+    Found 2-bit register for signal <ground<3><19>>.
+    Found 2-bit register for signal <ground<4><0>>.
+    Found 2-bit register for signal <ground<4><1>>.
+    Found 2-bit register for signal <ground<4><2>>.
+    Found 2-bit register for signal <ground<4><3>>.
+    Found 2-bit register for signal <ground<4><4>>.
+    Found 2-bit register for signal <ground<4><5>>.
+    Found 2-bit register for signal <ground<4><6>>.
+    Found 2-bit register for signal <ground<4><7>>.
+    Found 2-bit register for signal <ground<4><8>>.
+    Found 2-bit register for signal <ground<4><9>>.
+    Found 2-bit register for signal <ground<4><10>>.
+    Found 2-bit register for signal <ground<4><11>>.
+    Found 2-bit register for signal <ground<4><12>>.
+    Found 2-bit register for signal <ground<4><13>>.
+    Found 2-bit register for signal <ground<4><14>>.
+    Found 2-bit register for signal <ground<4><15>>.
+    Found 2-bit register for signal <ground<4><16>>.
+    Found 2-bit register for signal <ground<4><17>>.
+    Found 2-bit register for signal <ground<4><18>>.
+    Found 2-bit register for signal <ground<4><19>>.
+    Found 2-bit register for signal <ground<5><0>>.
+    Found 2-bit register for signal <ground<5><1>>.
+    Found 2-bit register for signal <ground<5><2>>.
+    Found 2-bit register for signal <ground<5><3>>.
+    Found 2-bit register for signal <ground<5><4>>.
+    Found 2-bit register for signal <ground<5><5>>.
+    Found 2-bit register for signal <ground<5><6>>.
+    Found 2-bit register for signal <ground<5><7>>.
+    Found 2-bit register for signal <ground<5><8>>.
+    Found 2-bit register for signal <ground<5><9>>.
+    Found 2-bit register for signal <ground<5><10>>.
+    Found 2-bit register for signal <ground<5><11>>.
+    Found 2-bit register for signal <ground<5><12>>.
+    Found 2-bit register for signal <ground<5><13>>.
+    Found 2-bit register for signal <ground<5><14>>.
+    Found 2-bit register for signal <ground<5><15>>.
+    Found 2-bit register for signal <ground<5><16>>.
+    Found 2-bit register for signal <ground<5><17>>.
+    Found 2-bit register for signal <ground<5><18>>.
+    Found 2-bit register for signal <ground<5><19>>.
+    Found 2-bit register for signal <ground<6><0>>.
+    Found 2-bit register for signal <ground<6><1>>.
+    Found 2-bit register for signal <ground<6><2>>.
+    Found 2-bit register for signal <ground<6><3>>.
+    Found 2-bit register for signal <ground<6><4>>.
+    Found 2-bit register for signal <ground<6><5>>.
+    Found 2-bit register for signal <ground<6><6>>.
+    Found 2-bit register for signal <ground<6><7>>.
+    Found 2-bit register for signal <ground<6><8>>.
+    Found 2-bit register for signal <ground<6><9>>.
+    Found 2-bit register for signal <ground<6><10>>.
+    Found 2-bit register for signal <ground<6><11>>.
+    Found 2-bit register for signal <ground<6><12>>.
+    Found 2-bit register for signal <ground<6><13>>.
+    Found 2-bit register for signal <ground<6><14>>.
+    Found 2-bit register for signal <ground<6><15>>.
+    Found 2-bit register for signal <ground<6><16>>.
+    Found 2-bit register for signal <ground<6><17>>.
+    Found 2-bit register for signal <ground<6><18>>.
+    Found 2-bit register for signal <ground<6><19>>.
+    Found 2-bit register for signal <ground<7><0>>.
+    Found 2-bit register for signal <ground<7><1>>.
+    Found 2-bit register for signal <ground<7><2>>.
+    Found 2-bit register for signal <ground<7><3>>.
+    Found 2-bit register for signal <ground<7><4>>.
+    Found 2-bit register for signal <ground<7><5>>.
+    Found 2-bit register for signal <ground<7><6>>.
+    Found 2-bit register for signal <ground<7><7>>.
+    Found 2-bit register for signal <ground<7><8>>.
+    Found 2-bit register for signal <ground<7><9>>.
+    Found 2-bit register for signal <ground<7><10>>.
+    Found 2-bit register for signal <ground<7><11>>.
+    Found 2-bit register for signal <ground<7><12>>.
+    Found 2-bit register for signal <ground<7><13>>.
+    Found 2-bit register for signal <ground<7><14>>.
+    Found 2-bit register for signal <ground<7><15>>.
+    Found 2-bit register for signal <ground<7><16>>.
+    Found 2-bit register for signal <ground<7><17>>.
+    Found 2-bit register for signal <ground<7><18>>.
+    Found 2-bit register for signal <ground<7><19>>.
+    Found 2-bit register for signal <ground<8><0>>.
+    Found 2-bit register for signal <ground<8><1>>.
+    Found 2-bit register for signal <ground<8><2>>.
+    Found 2-bit register for signal <ground<8><3>>.
+    Found 2-bit register for signal <ground<8><4>>.
+    Found 2-bit register for signal <ground<8><5>>.
+    Found 2-bit register for signal <ground<8><6>>.
+    Found 2-bit register for signal <ground<8><7>>.
+    Found 2-bit register for signal <ground<8><8>>.
+    Found 2-bit register for signal <ground<8><9>>.
+    Found 2-bit register for signal <ground<8><10>>.
+    Found 2-bit register for signal <ground<8><11>>.
+    Found 2-bit register for signal <ground<8><12>>.
+    Found 2-bit register for signal <ground<8><13>>.
+    Found 2-bit register for signal <ground<8><14>>.
+    Found 2-bit register for signal <ground<8><15>>.
+    Found 2-bit register for signal <ground<8><16>>.
+    Found 2-bit register for signal <ground<8><17>>.
+    Found 2-bit register for signal <ground<8><18>>.
+    Found 2-bit register for signal <ground<8><19>>.
+    Found 2-bit register for signal <ground<9><0>>.
+    Found 2-bit register for signal <ground<9><1>>.
+    Found 2-bit register for signal <ground<9><2>>.
+    Found 2-bit register for signal <ground<9><3>>.
+    Found 2-bit register for signal <ground<9><4>>.
+    Found 2-bit register for signal <ground<9><5>>.
+    Found 2-bit register for signal <ground<9><6>>.
+    Found 2-bit register for signal <ground<9><7>>.
+    Found 2-bit register for signal <ground<9><8>>.
+    Found 2-bit register for signal <ground<9><9>>.
+    Found 2-bit register for signal <ground<9><10>>.
+    Found 2-bit register for signal <ground<9><11>>.
+    Found 2-bit register for signal <ground<9><12>>.
+    Found 2-bit register for signal <ground<9><13>>.
+    Found 2-bit register for signal <ground<9><14>>.
+    Found 2-bit register for signal <ground<9><15>>.
+    Found 2-bit register for signal <ground<9><16>>.
+    Found 2-bit register for signal <ground<9><17>>.
+    Found 2-bit register for signal <ground<9><18>>.
+    Found 2-bit register for signal <ground<9><19>>.
+    Found 2-bit register for signal <ground<10><0>>.
+    Found 2-bit register for signal <ground<10><1>>.
+    Found 2-bit register for signal <ground<10><2>>.
+    Found 2-bit register for signal <ground<10><3>>.
+    Found 2-bit register for signal <ground<10><4>>.
+    Found 2-bit register for signal <ground<10><5>>.
+    Found 2-bit register for signal <ground<10><6>>.
+    Found 2-bit register for signal <ground<10><7>>.
+    Found 2-bit register for signal <ground<10><8>>.
+    Found 2-bit register for signal <ground<10><9>>.
+    Found 2-bit register for signal <ground<10><10>>.
+    Found 2-bit register for signal <ground<10><11>>.
+    Found 2-bit register for signal <ground<10><12>>.
+    Found 2-bit register for signal <ground<10><13>>.
+    Found 2-bit register for signal <ground<10><14>>.
+    Found 2-bit register for signal <ground<10><15>>.
+    Found 2-bit register for signal <ground<10><16>>.
+    Found 2-bit register for signal <ground<10><17>>.
+    Found 2-bit register for signal <ground<10><18>>.
+    Found 2-bit register for signal <ground<10><19>>.
+    Found 2-bit register for signal <ground<11><0>>.
+    Found 2-bit register for signal <ground<11><1>>.
+    Found 2-bit register for signal <ground<11><2>>.
+    Found 2-bit register for signal <ground<11><3>>.
+    Found 2-bit register for signal <ground<11><4>>.
+    Found 2-bit register for signal <ground<11><5>>.
+    Found 2-bit register for signal <ground<11><6>>.
+    Found 2-bit register for signal <ground<11><7>>.
+    Found 2-bit register for signal <ground<11><8>>.
+    Found 2-bit register for signal <ground<11><9>>.
+    Found 2-bit register for signal <ground<11><10>>.
+    Found 2-bit register for signal <ground<11><11>>.
+    Found 2-bit register for signal <ground<11><12>>.
+    Found 2-bit register for signal <ground<11><13>>.
+    Found 2-bit register for signal <ground<11><14>>.
+    Found 2-bit register for signal <ground<11><15>>.
+    Found 2-bit register for signal <ground<11><16>>.
+    Found 2-bit register for signal <ground<11><17>>.
+    Found 2-bit register for signal <ground<11><18>>.
+    Found 2-bit register for signal <ground<11><19>>.
+    Found 2-bit register for signal <ground<12><0>>.
+    Found 2-bit register for signal <ground<12><1>>.
+    Found 2-bit register for signal <ground<12><2>>.
+    Found 2-bit register for signal <ground<12><3>>.
+    Found 2-bit register for signal <ground<12><4>>.
+    Found 2-bit register for signal <ground<12><5>>.
+    Found 2-bit register for signal <ground<12><6>>.
+    Found 2-bit register for signal <ground<12><7>>.
+    Found 2-bit register for signal <ground<12><8>>.
+    Found 2-bit register for signal <ground<12><9>>.
+    Found 2-bit register for signal <ground<12><10>>.
+    Found 2-bit register for signal <ground<12><11>>.
+    Found 2-bit register for signal <ground<12><12>>.
+    Found 2-bit register for signal <ground<12><13>>.
+    Found 2-bit register for signal <ground<12><14>>.
+    Found 2-bit register for signal <ground<12><15>>.
+    Found 2-bit register for signal <ground<12><16>>.
+    Found 2-bit register for signal <ground<12><17>>.
+    Found 2-bit register for signal <ground<12><18>>.
+    Found 2-bit register for signal <ground<12><19>>.
+    Found 2-bit register for signal <ground<13><0>>.
+    Found 2-bit register for signal <ground<13><1>>.
+    Found 2-bit register for signal <ground<13><2>>.
+    Found 2-bit register for signal <ground<13><3>>.
+    Found 2-bit register for signal <ground<13><4>>.
+    Found 2-bit register for signal <ground<13><5>>.
+    Found 2-bit register for signal <ground<13><6>>.
+    Found 2-bit register for signal <ground<13><7>>.
+    Found 2-bit register for signal <ground<13><8>>.
+    Found 2-bit register for signal <ground<13><9>>.
+    Found 2-bit register for signal <ground<13><10>>.
+    Found 2-bit register for signal <ground<13><11>>.
+    Found 2-bit register for signal <ground<13><12>>.
+    Found 2-bit register for signal <ground<13><13>>.
+    Found 2-bit register for signal <ground<13><14>>.
+    Found 2-bit register for signal <ground<13><15>>.
+    Found 2-bit register for signal <ground<13><16>>.
+    Found 2-bit register for signal <ground<13><17>>.
+    Found 2-bit register for signal <ground<13><18>>.
+    Found 2-bit register for signal <ground<13><19>>.
+    Found 2-bit register for signal <ground<14><0>>.
+    Found 2-bit register for signal <ground<14><1>>.
+    Found 2-bit register for signal <ground<14><2>>.
+    Found 2-bit register for signal <ground<14><3>>.
+    Found 2-bit register for signal <ground<14><4>>.
+    Found 2-bit register for signal <ground<14><5>>.
+    Found 2-bit register for signal <ground<14><6>>.
+    Found 2-bit register for signal <ground<14><7>>.
+    Found 2-bit register for signal <ground<14><8>>.
+    Found 2-bit register for signal <ground<14><9>>.
+    Found 2-bit register for signal <ground<14><10>>.
+    Found 2-bit register for signal <ground<14><11>>.
+    Found 2-bit register for signal <ground<14><12>>.
+    Found 2-bit register for signal <ground<14><13>>.
+    Found 2-bit register for signal <ground<14><14>>.
+    Found 2-bit register for signal <ground<14><15>>.
+    Found 2-bit register for signal <ground<14><16>>.
+    Found 2-bit register for signal <ground<14><17>>.
+    Found 2-bit register for signal <ground<14><18>>.
+    Found 2-bit register for signal <ground<14><19>>.
+    Found 2-bit register for signal <ground<15><0>>.
+    Found 2-bit register for signal <ground<15><1>>.
+    Found 2-bit register for signal <ground<15><2>>.
+    Found 2-bit register for signal <ground<15><3>>.
+    Found 2-bit register for signal <ground<15><4>>.
+    Found 2-bit register for signal <ground<15><5>>.
+    Found 2-bit register for signal <ground<15><6>>.
+    Found 2-bit register for signal <ground<15><7>>.
+    Found 2-bit register for signal <ground<15><8>>.
+    Found 2-bit register for signal <ground<15><9>>.
+    Found 2-bit register for signal <ground<15><10>>.
+    Found 2-bit register for signal <ground<15><11>>.
+    Found 2-bit register for signal <ground<15><12>>.
+    Found 2-bit register for signal <ground<15><13>>.
+    Found 2-bit register for signal <ground<15><14>>.
+    Found 2-bit register for signal <ground<15><15>>.
+    Found 2-bit register for signal <ground<15><16>>.
+    Found 2-bit register for signal <ground<15><17>>.
+    Found 2-bit register for signal <ground<15><18>>.
+    Found 2-bit register for signal <ground<15><19>>.
+    Found 2-bit register for signal <ground<16><0>>.
+    Found 2-bit register for signal <ground<16><1>>.
+    Found 2-bit register for signal <ground<16><2>>.
+    Found 2-bit register for signal <ground<16><3>>.
+    Found 2-bit register for signal <ground<16><4>>.
+    Found 2-bit register for signal <ground<16><5>>.
+    Found 2-bit register for signal <ground<16><6>>.
+    Found 2-bit register for signal <ground<16><7>>.
+    Found 2-bit register for signal <ground<16><8>>.
+    Found 2-bit register for signal <ground<16><9>>.
+    Found 2-bit register for signal <ground<16><10>>.
+    Found 2-bit register for signal <ground<16><11>>.
+    Found 2-bit register for signal <ground<16><12>>.
+    Found 2-bit register for signal <ground<16><13>>.
+    Found 2-bit register for signal <ground<16><14>>.
+    Found 2-bit register for signal <ground<16><15>>.
+    Found 2-bit register for signal <ground<16><16>>.
+    Found 2-bit register for signal <ground<16><17>>.
+    Found 2-bit register for signal <ground<16><18>>.
+    Found 2-bit register for signal <ground<16><19>>.
+    Found 2-bit register for signal <ground<17><0>>.
+    Found 2-bit register for signal <ground<17><1>>.
+    Found 2-bit register for signal <ground<17><2>>.
+    Found 2-bit register for signal <ground<17><3>>.
+    Found 2-bit register for signal <ground<17><4>>.
+    Found 2-bit register for signal <ground<17><5>>.
+    Found 2-bit register for signal <ground<17><6>>.
+    Found 2-bit register for signal <ground<17><7>>.
+    Found 2-bit register for signal <ground<17><8>>.
+    Found 2-bit register for signal <ground<17><9>>.
+    Found 2-bit register for signal <ground<17><10>>.
+    Found 2-bit register for signal <ground<17><11>>.
+    Found 2-bit register for signal <ground<17><12>>.
+    Found 2-bit register for signal <ground<17><13>>.
+    Found 2-bit register for signal <ground<17><14>>.
+    Found 2-bit register for signal <ground<17><15>>.
+    Found 2-bit register for signal <ground<17><16>>.
+    Found 2-bit register for signal <ground<17><17>>.
+    Found 2-bit register for signal <ground<17><18>>.
+    Found 2-bit register for signal <ground<17><19>>.
+    Found 2-bit register for signal <ground<18><0>>.
+    Found 2-bit register for signal <ground<18><1>>.
+    Found 2-bit register for signal <ground<18><2>>.
+    Found 2-bit register for signal <ground<18><3>>.
+    Found 2-bit register for signal <ground<18><4>>.
+    Found 2-bit register for signal <ground<18><5>>.
+    Found 2-bit register for signal <ground<18><6>>.
+    Found 2-bit register for signal <ground<18><7>>.
+    Found 2-bit register for signal <ground<18><8>>.
+    Found 2-bit register for signal <ground<18><9>>.
+    Found 2-bit register for signal <ground<18><10>>.
+    Found 2-bit register for signal <ground<18><11>>.
+    Found 2-bit register for signal <ground<18><12>>.
+    Found 2-bit register for signal <ground<18><13>>.
+    Found 2-bit register for signal <ground<18><14>>.
+    Found 2-bit register for signal <ground<18><15>>.
+    Found 2-bit register for signal <ground<18><16>>.
+    Found 2-bit register for signal <ground<18><17>>.
+    Found 2-bit register for signal <ground<18><18>>.
+    Found 2-bit register for signal <ground<18><19>>.
+    Found 2-bit register for signal <ground<19><0>>.
+    Found 2-bit register for signal <ground<19><1>>.
+    Found 2-bit register for signal <ground<19><2>>.
+    Found 2-bit register for signal <ground<19><3>>.
+    Found 2-bit register for signal <ground<19><4>>.
+    Found 2-bit register for signal <ground<19><5>>.
+    Found 2-bit register for signal <ground<19><6>>.
+    Found 2-bit register for signal <ground<19><7>>.
+    Found 2-bit register for signal <ground<19><8>>.
+    Found 2-bit register for signal <ground<19><9>>.
+    Found 2-bit register for signal <ground<19><10>>.
+    Found 2-bit register for signal <ground<19><11>>.
+    Found 2-bit register for signal <ground<19><12>>.
+    Found 2-bit register for signal <ground<19><13>>.
+    Found 2-bit register for signal <ground<19><14>>.
+    Found 2-bit register for signal <ground<19><15>>.
+    Found 2-bit register for signal <ground<19><16>>.
+    Found 2-bit register for signal <ground<19><17>>.
+    Found 2-bit register for signal <ground<19><18>>.
+    Found 2-bit register for signal <ground<19><19>>.
+    Found 1-bit register for signal <prescalerspeed_dummy>.
+    Found 13-bit register for signal <svnsegmentNextState.counter>.
+    Found 32-bit register for signal <sn_posy>.
+    Found 32-bit register for signal <sn_posx>.
+    Found finite state machine <FSM_0> for signal <sevensegmentStates>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 4                                              |
+    | Clock              | CLK_24MHz (rising_edge)                        |
+    | Reset              | RESET (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 1110                                           |
+    | Power Up State     | 1110                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <snake_dir>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 42                                             |
+    | Inputs             | 15                                             |
+    | Outputs            | 4                                              |
+    | Clock              | CLK_24MHz (rising_edge)                        |
+    | Reset              | RESET (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | left                                           |
+    | Power Up State     | left                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 33-bit subtractor for signal <n12471> created at line 292.
+    Found 33-bit subtractor for signal <n13743> created at line 322.
+    Found 13-bit adder for signal <svnsegmentNextState.counter[12]_GND_8_o_add_19_OUT> created at line 144.
+    Found 26-bit adder for signal <countForoneSeccond[25]_GND_8_o_add_29_OUT> created at line 174.
+    Found 32-bit adder for signal <times[31]_GND_8_o_add_37_OUT> created at line 188.
+    Found 4-bit adder for signal <time_01[3]_GND_8_o_add_39_OUT> created at line 190.
+    Found 4-bit adder for signal <time_10[3]_GND_8_o_add_40_OUT> created at line 193.
+    Found 31-bit adder for signal <Prescaler[30]_GND_8_o_add_1740_OUT> created at line 287.
+    Found 32-bit adder for signal <n12895[31:0]> created at line 302.
+    Found 32-bit adder for signal <n13319[31:0]> created at line 312.
+    Found 4-bit adder for signal <point_next[3]_GND_8_o_add_4583_OUT> created at line 323.
+    Found 16x8-bit Read Only RAM for signal <point_10[3]_X_8_o_wide_mux_9_OUT>
+    Found 16x8-bit Read Only RAM for signal <point_01[3]_X_8_o_wide_mux_11_OUT>
+    Found 16x8-bit Read Only RAM for signal <time_10[3]_X_8_o_wide_mux_13_OUT>
+    Found 16x8-bit Read Only RAM for signal <time_01[3]_X_8_o_wide_mux_15_OUT>
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1791_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1792_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1793_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1794_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1795_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1796_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1797_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1798_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1799_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1800_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1801_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1802_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1803_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1804_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1805_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1806_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1807_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1808_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1809_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_1810_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posx[4]_X_8_o_wide_mux_1811_OUT> created at line 292.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2708_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2709_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2710_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2711_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2712_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2713_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2714_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2715_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2716_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2717_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2718_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2719_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2720_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2721_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2722_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2723_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2724_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2725_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2726_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[31]_X_8_o_wide_mux_2727_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posx[4]_X_8_o_wide_mux_2728_OUT> created at line 302.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posx[31]_X_8_o_wide_mux_3645_OUT> created at line 312.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4560_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4561_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4562_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4563_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4564_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4565_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4566_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4567_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4568_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4569_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4570_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4571_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4572_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4573_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4574_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4575_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4576_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4577_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4578_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posy[4]_X_8_o_wide_mux_4579_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <sn_posx[31]_X_8_o_wide_mux_4581_OUT> created at line 322.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9050_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9051_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9052_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9053_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9054_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9055_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9056_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9057_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9058_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9059_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9060_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9061_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9062_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9063_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9064_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9065_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9066_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9067_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9068_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posy[4]_X_8_o_wide_mux_9069_OUT> created at line 421.
+    Found 2-bit 20-to-1 multiplexer for signal <posx[4]_X_8_o_wide_mux_9070_OUT> created at line 421.
+WARNING:Xst:737 - Found 1-bit latch for signal <posx<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <posx<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <posx<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <posx<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <posx<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <posy<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <posy<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <posy<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <posy<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <posy<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit comparator greater for signal <n0037> created at line 177
+    Found 32-bit comparator greater for signal <GND_8_o_times[31]_LessThan_37_o> created at line 187
+    Found 4-bit comparator greater for signal <time_01[3]_PWR_9_o_LessThan_39_o> created at line 189
+    Found 31-bit comparator equal for signal <Prescaler[30]_prescalerspeed[30]_equal_1742_o> created at line 289
+    Found 32-bit comparator greater for signal <sn_posy[31]_GND_8_o_LessThan_1744_o> created at line 291
+    Found 32-bit comparator greater for signal <GND_8_o_sn_posy[31]_LessThan_2661_o> created at line 301
+    Found 32-bit comparator greater for signal <GND_8_o_sn_posx[31]_LessThan_3578_o> created at line 311
+    Found 32-bit comparator greater for signal <sn_posx[31]_GND_8_o_LessThan_4514_o> created at line 321
+    Found 11-bit comparator greater for signal <n9883> created at line 369
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8882_o> created at line 369
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8884_o> created at line 370
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8886_o> created at line 371
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8888_o> created at line 372
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8890_o> created at line 373
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8892_o> created at line 374
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8894_o> created at line 375
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8896_o> created at line 376
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8898_o> created at line 377
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8900_o> created at line 378
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8902_o> created at line 379
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8904_o> created at line 380
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8906_o> created at line 381
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8908_o> created at line 382
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8910_o> created at line 383
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8912_o> created at line 384
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8914_o> created at line 385
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8916_o> created at line 386
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8918_o> created at line 387
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_8920_o> created at line 388
+    Found 11-bit comparator greater for signal <n10067> created at line 392
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8942_o> created at line 392
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8944_o> created at line 393
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8946_o> created at line 394
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8948_o> created at line 395
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8950_o> created at line 396
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8952_o> created at line 397
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8954_o> created at line 398
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8956_o> created at line 399
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8958_o> created at line 400
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8960_o> created at line 401
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8962_o> created at line 402
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8964_o> created at line 403
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8966_o> created at line 404
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8968_o> created at line 405
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8970_o> created at line 406
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8972_o> created at line 407
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8974_o> created at line 408
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8976_o> created at line 409
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8978_o> created at line 410
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_8980_o> created at line 411
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_8_o_LessThan_9004_o> created at line 415
+    Found 11-bit comparator greater for signal <ScanlineX[10]_GND_8_o_LessThan_9006_o> created at line 415
+    WARNING:Xst:2404 -  FFs/Latches <prescalerspeed<1:7>> (without init value) have a constant value of 0 in block <VGA_Square>.
+    WARNING:Xst:2404 -  FFs/Latches <prescalerspeed<8:9>> (without init value) have a constant value of 0 in block <VGA_Square>.
+    WARNING:Xst:2404 -  FFs/Latches <prescalerspeed<10:12>> (without init value) have a constant value of 0 in block <VGA_Square>.
+    WARNING:Xst:2404 -  FFs/Latches <prescalerspeed<13:14>> (without init value) have a constant value of 0 in block <VGA_Square>.
+    WARNING:Xst:2404 -  FFs/Latches <prescalerspeed<15:15>> (without init value) have a constant value of 0 in block <VGA_Square>.
+    WARNING:Xst:2404 -  FFs/Latches <prescalerspeed<16:16>> (without init value) have a constant value of 0 in block <VGA_Square>.
+    WARNING:Xst:2404 -  FFs/Latches <prescalerspeed<17:23>> (without init value) have a constant value of 0 in block <VGA_Square>.
+    WARNING:Xst:2404 -  FFs/Latches <apple_randy_next<4:3>> (without init value) have a constant value of 0 in block <VGA_Square>.
+    WARNING:Xst:2404 -  FFs/Latches <snake_randx_next<4:3>> (without init value) have a constant value of 0 in block <VGA_Square>.
+    Summary:
+	inferred   4 RAM(s).
+	inferred  11 Adder/Subtractor(s).
+	inferred 1043 D-type flip-flop(s).
+	inferred  10 Latch(s).
+	inferred  52 Comparator(s).
+	inferred 4275 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <VGA_Square> synthesized.
+
+Synthesizing Unit <div_32s_5s>.
+    Related source file is "".
+    Found 32-bit subtractor for signal <a[31]_unary_minus_1_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_37_o_BUS_0001_add_70_OUT[32:0]> created at line 0.
+    Found 37-bit adder for signal <GND_37_o_b[4]_add_5_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_37_o_b[4]_add_7_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_37_o_b[4]_add_9_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_37_o_b[4]_add_11_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_37_o_b[4]_add_13_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[4]_add_15_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_17_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_59_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_61_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_63_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_65_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_37_o_add_67_OUT[31:0]> created at line 0.
+    Found 37-bit comparator greater for signal <BUS_0001_INV_1208_o> created at line 0
+    Found 36-bit comparator greater for signal <BUS_0002_INV_1207_o> created at line 0
+    Found 35-bit comparator greater for signal <BUS_0003_INV_1206_o> created at line 0
+    Found 34-bit comparator greater for signal <BUS_0004_INV_1205_o> created at line 0
+    Found 33-bit comparator greater for signal <BUS_0005_INV_1204_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0006_INV_1203_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0007_INV_1202_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0008_INV_1201_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0009_INV_1200_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0010_INV_1199_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0011_INV_1198_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0012_INV_1197_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0013_INV_1196_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0014_INV_1195_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0015_INV_1194_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0016_INV_1193_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0017_INV_1192_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0018_INV_1191_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0019_INV_1190_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0020_INV_1189_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0021_INV_1188_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0022_INV_1187_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0023_INV_1186_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0024_INV_1185_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0025_INV_1184_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0026_INV_1183_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0027_INV_1182_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0028_INV_1181_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0029_INV_1180_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0030_INV_1179_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0031_INV_1178_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0032_INV_1177_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0033_INV_1176_o> created at line 0
+    Summary:
+	inferred  34 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 933 Multiplexer(s).
+Unit <div_32s_5s> synthesized.
+
+Synthesizing Unit <mod_32s_5s>.
+    Related source file is "".
+    Found 32-bit subtractor for signal <a[31]_unary_minus_1_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_40_o_b[4]_add_5_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_40_o_b[4]_add_7_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_40_o_b[4]_add_9_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_40_o_b[4]_add_11_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_40_o_b[4]_add_13_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[4]_add_15_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_17_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_59_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_61_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_63_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_65_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_67_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_40_o_add_69_OUT> created at line 0.
+    Found 5-bit adder for signal <b[4]_a[31]_add_71_OUT[4:0]> created at line 0.
+    Found 37-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  35 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 1031 Multiplexer(s).
+Unit <mod_32s_5s> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16x8-bit single-port Read Only RAM                    : 4
+# Adders/Subtractors                                   : 84
+ 11-bit adder                                          : 2
+ 11-bit subtractor                                     : 2
+ 13-bit adder                                          : 1
+ 26-bit adder                                          : 1
+ 31-bit adder                                          : 1
+ 32-bit adder                                          : 58
+ 32-bit subtractor                                     : 2
+ 33-bit adder                                          : 3
+ 33-bit subtractor                                     : 2
+ 34-bit adder                                          : 2
+ 35-bit adder                                          : 2
+ 36-bit adder                                          : 2
+ 37-bit adder                                          : 2
+ 4-bit adder                                           : 3
+ 5-bit adder                                           : 1
+# Registers                                            : 425
+ 1-bit register                                        : 7
+ 11-bit register                                       : 2
+ 13-bit register                                       : 1
+ 2-bit register                                        : 400
+ 26-bit register                                       : 1
+ 31-bit register                                       : 1
+ 32-bit register                                       : 4
+ 4-bit register                                        : 7
+ 5-bit register                                        : 2
+# Latches                                              : 10
+ 1-bit latch                                           : 10
+# Comparators                                          : 126
+ 11-bit comparator greater                             : 48
+ 11-bit comparator lessequal                           : 4
+ 31-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 34
+ 32-bit comparator lessequal                           : 28
+ 33-bit comparator greater                             : 1
+ 33-bit comparator lessequal                           : 1
+ 34-bit comparator greater                             : 1
+ 34-bit comparator lessequal                           : 1
+ 35-bit comparator greater                             : 1
+ 35-bit comparator lessequal                           : 1
+ 36-bit comparator greater                             : 1
+ 36-bit comparator lessequal                           : 1
+ 37-bit comparator greater                             : 1
+ 37-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 6246
+ 1-bit 2-to-1 multiplexer                              : 2116
+ 11-bit 2-to-1 multiplexer                             : 4
+ 2-bit 2-to-1 multiplexer                              : 4003
+ 2-bit 20-to-1 multiplexer                             : 85
+ 26-bit 2-to-1 multiplexer                             : 1
+ 31-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 10
+ 33-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 7
+ 5-bit 2-to-1 multiplexer                              : 1
+ 6-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 14
+# FSMs                                                 : 2
+# Xors                                                 : 5
+ 1-bit xor2                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <prescalerspeed> in Unit <VGA_SQ> is equivalent to the following FF/Latch, which will be removed : <prescalerspeed_dummy> 
+INFO:Xst:2261 - The FF/Latch <pseudo_rand1_11> in Unit <VGA_SQ> is equivalent to the following FF/Latch, which will be removed : <apple_randy_next_10> 
+INFO:Xst:2261 - The FF/Latch <pseudo_rand1_13> in Unit <VGA_SQ> is equivalent to the following FF/Latch, which will be removed : <apple_randx_next_0> 
+INFO:Xst:2261 - The FF/Latch <pseudo_rand1_16> in Unit <VGA_SQ> is equivalent to the following FF/Latch, which will be removed : <apple_randx_next_3> 
+INFO:Xst:2261 - The FF/Latch <pseudo_rand1_7> in Unit <VGA_SQ> is equivalent to the following FF/Latch, which will be removed : <snake_randx_next_6> 
+INFO:Xst:2261 - The FF/Latch <pseudo_rand1_9> in Unit <VGA_SQ> is equivalent to the following FF/Latch, which will be removed : <apple_randy_next_8> 
+WARNING:Xst:1426 - The value init of the FF/Latch prescalerspeed hinder the constant cleaning in the block VGA_SQ.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch snake_randy_next_4 hinder the constant cleaning in the block VGA_SQ.
+   You should achieve better results by setting this init to 0.
+
+Synthesizing (advanced) Unit <VGA_Square>.
+The following registers are absorbed into counter <countForoneSeccond>: 1 register on signal <countForoneSeccond>.
+The following registers are absorbed into counter <times>: 1 register on signal <times>.
+The following registers are absorbed into counter <time_10>: 1 register on signal <time_10>.
+The following registers are absorbed into counter <point_next>: 1 register on signal <point_next>.
+The following registers are absorbed into counter <Prescaler>: 1 register on signal <Prescaler>.
+The following registers are absorbed into counter <svnsegmentNextState.counter>: 1 register on signal <svnsegmentNextState.counter>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_time_10[3]_X_8_o_wide_mux_13_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <time_10>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_time_01[3]_X_8_o_wide_mux_15_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <time_01>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_point_10[3]_X_8_o_wide_mux_9_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <point_10>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_point_01[3]_X_8_o_wide_mux_11_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <point_01>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <VGA_Square> synthesized (advanced).
+
+Synthesizing (advanced) Unit <VGA_controller>.
+The following registers are absorbed into counter <CurrentHPos>: 1 register on signal <CurrentHPos>.
+The following registers are absorbed into counter <CurrentVPos>: 1 register on signal <CurrentVPos>.
+Unit <VGA_controller> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16x8-bit single-port distributed Read Only RAM        : 4
+# Adders/Subtractors                                   : 77
+ 11-bit subtractor                                     : 2
+ 13-bit adder                                          : 1
+ 32-bit adder                                          : 66
+ 32-bit subtractor                                     : 4
+ 33-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 2
+# Counters                                             : 8
+ 11-bit up counter                                     : 2
+ 13-bit up counter                                     : 1
+ 26-bit up counter                                     : 1
+ 31-bit up counter                                     : 1
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+# Registers                                            : 933
+ Flip-Flops                                            : 933
+# Comparators                                          : 126
+ 11-bit comparator greater                             : 48
+ 11-bit comparator lessequal                           : 4
+ 31-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 34
+ 32-bit comparator lessequal                           : 28
+ 33-bit comparator greater                             : 1
+ 33-bit comparator lessequal                           : 1
+ 34-bit comparator greater                             : 1
+ 34-bit comparator lessequal                           : 1
+ 35-bit comparator greater                             : 1
+ 35-bit comparator lessequal                           : 1
+ 36-bit comparator greater                             : 1
+ 36-bit comparator lessequal                           : 1
+ 37-bit comparator greater                             : 1
+ 37-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 6240
+ 1-bit 2-to-1 multiplexer                              : 2116
+ 11-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 4003
+ 2-bit 20-to-1 multiplexer                             : 85
+ 32-bit 2-to-1 multiplexer                             : 9
+ 33-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 6
+ 5-bit 2-to-1 multiplexer                              : 1
+ 6-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 14
+# FSMs                                                 : 2
+# Xors                                                 : 5
+ 1-bit xor2                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch prescalerspeed hinder the constant cleaning in the block VGA_Square.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch prescalerspeed_dummy hinder the constant cleaning in the block VGA_Square.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch snake_randy_next_4 hinder the constant cleaning in the block VGA_Square.
+   You should achieve better results by setting this init to 0.
+INFO:Xst:2261 - The FF/Latch <prescalerspeed> in Unit <VGA_Square> is equivalent to the following FF/Latch, which will be removed : <prescalerspeed_dummy> 
+INFO:Xst:2261 - The FF/Latch <pseudo_rand1_11> in Unit <VGA_Square> is equivalent to the following FF/Latch, which will be removed : <apple_randy_next_10> 
+INFO:Xst:2261 - The FF/Latch <pseudo_rand1_13> in Unit <VGA_Square> is equivalent to the following FF/Latch, which will be removed : <apple_randx_next_0> 
+INFO:Xst:2261 - The FF/Latch <pseudo_rand1_16> in Unit <VGA_Square> is equivalent to the following FF/Latch, which will be removed : <apple_randx_next_3> 
+INFO:Xst:2261 - The FF/Latch <pseudo_rand1_7> in Unit <VGA_Square> is equivalent to the following FF/Latch, which will be removed : <snake_randx_next_6> 
+INFO:Xst:2261 - The FF/Latch <pseudo_rand1_9> in Unit <VGA_Square> is equivalent to the following FF/Latch, which will be removed : <apple_randy_next_8> 
+INFO:Xst:2261 - The FF/Latch <gameEnded> in Unit <VGA_Square> is equivalent to the following FF/Latch, which will be removed : <win> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <VGA_SQ/FSM_0> on signal <sevensegmentStates[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 1110  | 00
+ 0111  | 01
+ 1011  | 11
+ 1101  | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <VGA_SQ/FSM_1> on signal <snake_dir[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ left  | 00
+ right | 01
+ up    | 10
+ down  | 11
+-------------------
+WARNING:Xst:1293 - FF/Latch <point_10_1> has a constant value of 0 in block <VGA_Square>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <point_10_2> has a constant value of 0 in block <VGA_Square>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    posy_0 in unit <VGA_Square>
+    posy_2 in unit <VGA_Square>
+    posy_3 in unit <VGA_Square>
+    posy_1 in unit <VGA_Square>
+    posy_4 in unit <VGA_Square>
+    posx_0 in unit <VGA_Square>
+    posx_2 in unit <VGA_Square>
+    posx_3 in unit <VGA_Square>
+    posx_1 in unit <VGA_Square>
+    posx_4 in unit <VGA_Square>
+
+
+  List of register instances with asynchronous set or reset and opposite initialization value:
+    apple_randx_next_4 in unit <VGA_Square>
+    apple_randx_next_2 in unit <VGA_Square>
+    snake_randy_next_4 in unit <VGA_Square>
+    snake_randy_next_3 in unit <VGA_Square>
+    snake_randy_next_2 in unit <VGA_Square>
+    snake_randy_next_1 in unit <VGA_Square>
+    snake_randy_next_0 in unit <VGA_Square>
+    apple_randy_next_11 in unit <VGA_Square>
+    snake_randx_next_7 in unit <VGA_Square>
+    snake_randx_next_4 in unit <VGA_Square>
+    prescalerspeed in unit <VGA_Square>
+
+
+Optimizing unit <CAD971Test> ...
+
+Optimizing unit <VGA_Square> ...
+
+Optimizing unit <VGA_controller> ...
+WARNING:Xst:1293 - FF/Latch <VGA_SQ/ground_7_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_6_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_6_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_6_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_6_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_5_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_5_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_5_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_5_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_4_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_4_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_4_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_4_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_3_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_3_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_3_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_3_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_2_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_2_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_2_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_1_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_1_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_1_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_1_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_0_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_0_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_0_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_0_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_14_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_13_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_13_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_13_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_13_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_12_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_12_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_12_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_12_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_11_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_11_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_11_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_11_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_10_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_10_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_10_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_10_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_9_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_9_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_9_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_9_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_8_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_8_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_8_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_8_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_7_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_7_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_7_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_30> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_29> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_28> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_27> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_26> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_25> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_24> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_23> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_22> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_21> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_20> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_19> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_18> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_17> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_16> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_15> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_14> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_13> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_12> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_11> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_10> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_9> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_8> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_7> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_6> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_5> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_Control/CurrentVPos_10> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_Control/CurrentHPos_10> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_31> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_30> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_29> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_28> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_27> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_26> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_25> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_24> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_23> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_22> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_21> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_20> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_19> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_18> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_17> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_16> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_15> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_14> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_13> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_12> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_11> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_10> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_9> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_8> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_7> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_6> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posx_5> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/sn_posy_31> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_15_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_13_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_12_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_14_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_11_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_10_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_8_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_7_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_9_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_6_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_5_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_4_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_3_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_2_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_1_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_0_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_15_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_14_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_13_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_12_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_10_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_9_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_11_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_31> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_30> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_29> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_28> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_27> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_26> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_25> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_24> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_23> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_22> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_21> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_20> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_19> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_18> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_17> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_16> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_15> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_14> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_13> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_12> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_11> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_10> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_9> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_8> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/times_7> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_19_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_0_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_15_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_13_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_12_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_14_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_11_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_10_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_9_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_8_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_7_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_6_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_4_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_3_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_5_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_2_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_1_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_15_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_15_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_16_0_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_15_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_15_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_14_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_14_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_14_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_8_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_7_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_6_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_5_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_4_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_3_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_1_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_0_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_18_2_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_19_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_18_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_16_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_15_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_17_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_14_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_13_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_11_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_10_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_12_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_9_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_8_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_7_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_6_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_5_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_4_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_2_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_1_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_SQ/ground_17_3_1> has a constant value of 0 in block <CAD971Test>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:3203 - The FF/Latch <VGA_SQ/prescalerspeed> in Unit <CAD971Test> is the opposite to the following FF/Latch, which will be removed : <VGA_SQ/snake_randy_next_4> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CAD971Test, actual ratio is 89.
+WARNING:Xst:1426 - The value init of the FF/Latch VGA_SQ/apple_randx_next_4_LD hinder the constant cleaning in the block CAD971Test.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch VGA_SQ/prescalerspeed_C hinder the constant cleaning in the block CAD971Test.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch VGA_SQ/apple_randx_next_2_LD hinder the constant cleaning in the block CAD971Test.
+   You should achieve better results by setting this init to 0.
+INFO:Xst:2261 - The FF/Latch <VGA_SQ/pseudo_rand1_2> in Unit <CAD971Test> is equivalent to the following FF/Latch, which will be removed : <VGA_SQ/snake_randy_next_1_C_1> 
+INFO:Xst:2261 - The FF/Latch <VGA_SQ/pseudo_rand1_5> in Unit <CAD971Test> is equivalent to the following FF/Latch, which will be removed : <VGA_SQ/snake_randx_next_4_C_4> 
+INFO:Xst:2261 - The FF/Latch <VGA_SQ/pseudo_rand1_12> in Unit <CAD971Test> is equivalent to the following FF/Latch, which will be removed : <VGA_SQ/apple_randy_next_11_C_11> 
+INFO:Xst:2261 - The FF/Latch <VGA_SQ/pseudo_rand1_15> in Unit <CAD971Test> is equivalent to the following FF/Latch, which will be removed : <VGA_SQ/apple_randx_next_2_C_2> 
+FlipFlop VGA_SQ/sn_posy_0 has been replicated 6 time(s)
+FlipFlop VGA_SQ/sn_posy_1 has been replicated 6 time(s)
+FlipFlop VGA_SQ/sn_posy_2 has been replicated 1 time(s)
+FlipFlop VGA_SQ/sn_posy_3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <CAD971Test> :
+	Found 10-bit shift register for signal <VGA_SQ/pseudo_rand1_31>.
+	Found 5-bit shift register for signal <VGA_SQ/pseudo_rand1_21>.
+Unit <CAD971Test> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 838
+ Flip-Flops                                            : 838
+# Shift Registers                                      : 2
+ 10-bit shift register                                 : 1
+ 5-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : CAD971Test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 4320
+#      GND                         : 1
+#      INV                         : 18
+#      LUT1                        : 59
+#      LUT2                        : 68
+#      LUT3                        : 167
+#      LUT4                        : 46
+#      LUT5                        : 899
+#      LUT6                        : 2599
+#      MUXCY                       : 174
+#      MUXF7                       : 158
+#      VCC                         : 1
+#      XORCY                       : 130
+# FlipFlops/Latches                : 863
+#      FD                          : 9
+#      FDC                         : 96
+#      FDCE                        : 699
+#      FDE                         : 26
+#      FDP                         : 8
+#      FDRE                        : 13
+#      LD                          : 12
+# Shift Registers                  : 2
+#      SRLC16E                     : 2
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 33
+#      IBUF                        : 5
+#      OBUF                        : 28
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             863  out of  11440     7%  
+ Number of Slice LUTs:                 3858  out of   5720    67%  
+    Number used as Logic:              3856  out of   5720    67%  
+    Number used as Memory:                2  out of   1440     0%  
+       Number used as SRL:                2
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3905
+   Number with an unused Flip Flop:    3042  out of   3905    77%  
+   Number with an unused LUT:            47  out of   3905     1%  
+   Number of fully used LUT-FF pairs:   816  out of   3905    20%  
+   Number of unique control sets:       343
+
+IO Utilization: 
+ Number of IOs:                          42
+ Number of bonded IOBs:                  34  out of    102    33%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                       | Clock buffer(FF name)  | Load  |
+-------------------------------------------------------------------+------------------------+-------+
+CLOCK_24                                                           | BUFGP                  | 853   |
+RESET_N                                                            | IBUF+BUFG              | 2     |
+VGA_SQ/GND_8_o_GND_8_o_OR_711_o(VGA_SQ/GND_8_o_GND_8_o_OR_711_o5:O)| NONE(*)(VGA_SQ/posy_0) | 4     |
+VGA_SQ/posy_2_G(VGA_SQ/posy_2_G:O)                                 | NONE(*)(VGA_SQ/posy_2) | 1     |
+VGA_SQ/GND_8_o_GND_8_o_OR_103_o(VGA_SQ/GND_8_o_GND_8_o_OR_103_o5:O)| NONE(*)(VGA_SQ/posx_0) | 4     |
+VGA_SQ/posx_2_G(VGA_SQ/posx_2_G:O)                                 | NONE(*)(VGA_SQ/posx_2) | 1     |
+-------------------------------------------------------------------+------------------------+-------+
+(*) These 4 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 15.433ns (Maximum Frequency: 64.795MHz)
+   Minimum input arrival time before clock: 5.791ns
+   Maximum output required time after clock: 16.720ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLOCK_24'
+  Clock period: 15.433ns (frequency: 64.795MHz)
+  Total number of paths / destination ports: 8836342 / 1572
+-------------------------------------------------------------------------
+Delay:               15.433ns (Levels of Logic = 13)
+  Source:            VGA_SQ/sn_posy_0_1 (FF)
+  Destination:       VGA_SQ/ground_2_18_1 (FF)
+  Source Clock:      CLOCK_24 rising
+  Destination Clock: CLOCK_24 rising
+
+  Data Path: VGA_SQ/sn_posy_0_1 to VGA_SQ/ground_2_18_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.525   0.681  VGA_SQ/sn_posy_0_1 (VGA_SQ/sn_posy_0_1)
+     INV:I->O              1   0.255   0.000  VGA_SQ/Madd_n12895[31:0]_lut<0>_INV_0 (VGA_SQ/Madd_n12895[31:0]_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  VGA_SQ/Madd_n12895[31:0]_cy<0> (VGA_SQ/Madd_n12895[31:0]_cy<0>)
+     XORCY:CI->O         186   0.206   2.401  VGA_SQ/Madd_n12895[31:0]_xor<1> (VGA_SQ/n12895[31:0]<1>)
+     LUT6:I5->O            1   0.254   0.958  VGA_SQ/Mmux_sn_posy[31]_X_8_o_wide_mux_2718_OUT_91 (VGA_SQ/Mmux_sn_posy[31]_X_8_o_wide_mux_2718_OUT_91)
+     LUT6:I2->O            1   0.254   0.000  VGA_SQ/Mmux_sn_posy[31]_X_8_o_wide_mux_2718_OUT_4 (VGA_SQ/Mmux_sn_posy[31]_X_8_o_wide_mux_2718_OUT_4)
+     MUXF7:I0->O           1   0.163   0.958  VGA_SQ/Mmux_sn_posy[31]_X_8_o_wide_mux_2718_OUT_2_f7 (VGA_SQ/sn_posy[31]_X_8_o_wide_mux_2718_OUT<0>)
+     LUT6:I2->O            1   0.254   0.958  VGA_SQ/Mmux_sn_posx[4]_X_8_o_wide_mux_2728_OUT_91 (VGA_SQ/Mmux_sn_posx[4]_X_8_o_wide_mux_2728_OUT_91)
+     LUT6:I2->O            1   0.254   0.000  VGA_SQ/Mmux_sn_posx[4]_X_8_o_wide_mux_2728_OUT_2_f7_F (N3092)
+     MUXF7:I0->O          26   0.163   1.420  VGA_SQ/Mmux_sn_posx[4]_X_8_o_wide_mux_2728_OUT_2_f7 (VGA_SQ/sn_posx[4]_X_8_o_wide_mux_2728_OUT<0>)
+     LUT4:I3->O           20   0.254   1.286  VGA_SQ/PWR_9_o_GND_8_o_AND_2075_o1_1 (VGA_SQ/PWR_9_o_GND_8_o_AND_2075_o1)
+     LUT6:I5->O           31   0.254   1.503  VGA_SQ/_n19703_inv11 (VGA_SQ/_n19703_inv11)
+     LUT6:I5->O            2   0.254   0.726  VGA_SQ/Mmux_ground[4][19][1]_ground[4][19][1]_mux_8166_OUT21 (VGA_SQ/Mmux_ground[4][19][1]_ground[4][19][1]_mux_8166_OUT21)
+     LUT6:I5->O            1   0.254   0.681  VGA_SQ/_n26263_inv (VGA_SQ/_n26263_inv)
+     FDCE:CE                   0.302          VGA_SQ/ground_4_19_0
+    ----------------------------------------
+    Total                     15.433ns (3.861ns logic, 11.572ns route)
+                                       (25.0% logic, 75.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLOCK_24'
+  Total number of paths / destination ports: 872 / 856
+-------------------------------------------------------------------------
+Offset:              5.791ns (Levels of Logic = 2)
+  Source:            RESET_N (PAD)
+  Destination:       VGA_SQ/point_next_3 (FF)
+  Destination Clock: CLOCK_24 rising
+
+  Data Path: RESET_N to VGA_SQ/point_next_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            17   1.328   1.208  RESET_N_IBUF (RESET_N_IBUF)
+     INV:I->O            803   0.255   2.541  RESET_N_IBUF_BUFG_LUT1_INV_0 (RESET_N_IBUF_BUFG_LUT1)
+     FDC:CLR                   0.459          VGA_SQ/pseudo_rand1_0
+    ----------------------------------------
+    Total                      5.791ns (2.042ns logic, 3.749ns route)
+                                       (35.3% logic, 64.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLOCK_24'
+  Total number of paths / destination ports: 7214 / 27
+-------------------------------------------------------------------------
+Offset:              16.720ns (Levels of Logic = 9)
+  Source:            VGA_Control/CurrentVPos_2 (FF)
+  Destination:       VGA_R<0> (PAD)
+  Source Clock:      CLOCK_24 rising
+
+  Data Path: VGA_Control/CurrentVPos_2 to VGA_R<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            20   0.525   1.394  VGA_Control/CurrentVPos_2 (VGA_Control/CurrentVPos_2)
+     LUT2:I0->O            3   0.250   0.766  VGA_Control/Blank_INV_22_o111 (VGA_Control/Blank_INV_22_o11)
+     LUT6:I5->O            8   0.254   0.944  VGA_Control/Blank_INV_22_o1 (VGA_Control/Blank_INV_22_o1)
+     LUT5:I4->O           62   0.254   2.369  VGA_Control/Blank_INV_22_o3 (VGA_Control/Blank_INV_22_o)
+     LUT6:I0->O           24   0.254   1.656  VGA_Control/Mmux_ScanlineY81 (ScanlineY<6>)
+     LUT6:I2->O            2   0.254   1.181  VGA_SQ/ScanlineY[10]_GND_8_o_LessThan_8980_o1 (VGA_SQ/ScanlineY[10]_GND_8_o_LessThan_8980_o)
+     LUT6:I0->O            1   0.254   1.112  VGA_SQ/ScanlineY[10]_GND_8_o_OR_1303_o3 (VGA_SQ/ScanlineY[10]_GND_8_o_OR_1303_o3)
+     LUT5:I0->O            6   0.254   1.152  VGA_SQ/ScanlineY[10]_GND_8_o_OR_1303_o4 (VGA_SQ/ScanlineY[10]_GND_8_o_OR_1303_o)
+     LUT4:I0->O            1   0.254   0.681  VGA_Control/Mmux_RED11 (VGA_R_0_OBUF)
+     OBUF:I->O                 2.912          VGA_R_0_OBUF (VGA_R<0>)
+    ----------------------------------------
+    Total                     16.720ns (5.465ns logic, 11.255ns route)
+                                       (32.7% logic, 67.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'VGA_SQ/GND_8_o_GND_8_o_OR_103_o'
+  Total number of paths / destination ports: 96 / 6
+-------------------------------------------------------------------------
+Offset:              8.533ns (Levels of Logic = 5)
+  Source:            VGA_SQ/posx_1 (LATCH)
+  Destination:       VGA_B<1> (PAD)
+  Source Clock:      VGA_SQ/GND_8_o_GND_8_o_OR_103_o falling
+
+  Data Path: VGA_SQ/posx_1 to VGA_B<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              10   0.581   1.463  VGA_SQ/posx_1 (VGA_SQ/posx_1)
+     LUT6:I0->O            1   0.254   0.958  VGA_SQ/Mmux_posx[4]_X_8_o_wide_mux_9070_OUT_91 (VGA_SQ/Mmux_posx[4]_X_8_o_wide_mux_9070_OUT_91)
+     LUT6:I2->O            1   0.254   0.000  VGA_SQ/Mmux_posx[4]_X_8_o_wide_mux_9070_OUT_4 (VGA_SQ/Mmux_posx[4]_X_8_o_wide_mux_9070_OUT_4)
+     MUXF7:I0->O           4   0.163   1.032  VGA_SQ/Mmux_posx[4]_X_8_o_wide_mux_9070_OUT_2_f7 (VGA_SQ/posx[4]_X_8_o_wide_mux_9070_OUT<0>)
+     LUT5:I2->O            1   0.235   0.681  VGA_Control/Mmux_BLUE21 (VGA_B_1_OBUF)
+     OBUF:I->O                 2.912          VGA_B_1_OBUF (VGA_B<1>)
+    ----------------------------------------
+    Total                      8.533ns (4.399ns logic, 4.134ns route)
+                                       (51.6% logic, 48.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'VGA_SQ/posx_2_G'
+  Total number of paths / destination ports: 8 / 6
+-------------------------------------------------------------------------
+Offset:              7.014ns (Levels of Logic = 4)
+  Source:            VGA_SQ/posx_2 (LATCH)
+  Destination:       VGA_B<1> (PAD)
+  Source Clock:      VGA_SQ/posx_2_G falling
+
+  Data Path: VGA_SQ/posx_2 to VGA_B<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.581   1.156  VGA_SQ/posx_2 (VGA_SQ/posx_2)
+     LUT6:I1->O            1   0.254   0.000  VGA_SQ/Mmux_posx[4]_X_8_o_wide_mux_9070_OUT_4 (VGA_SQ/Mmux_posx[4]_X_8_o_wide_mux_9070_OUT_4)
+     MUXF7:I0->O           4   0.163   1.032  VGA_SQ/Mmux_posx[4]_X_8_o_wide_mux_9070_OUT_2_f7 (VGA_SQ/posx[4]_X_8_o_wide_mux_9070_OUT<0>)
+     LUT5:I2->O            1   0.235   0.681  VGA_Control/Mmux_BLUE21 (VGA_B_1_OBUF)
+     OBUF:I->O                 2.912          VGA_B_1_OBUF (VGA_B<1>)
+    ----------------------------------------
+    Total                      7.014ns (4.145ns logic, 2.869ns route)
+                                       (59.1% logic, 40.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'VGA_SQ/GND_8_o_GND_8_o_OR_711_o'
+  Total number of paths / destination ports: 1616 / 6
+-------------------------------------------------------------------------
+Offset:              12.491ns (Levels of Logic = 8)
+  Source:            VGA_SQ/posy_1 (LATCH)
+  Destination:       VGA_B<1> (PAD)
+  Source Clock:      VGA_SQ/GND_8_o_GND_8_o_OR_711_o falling
+
+  Data Path: VGA_SQ/posy_1 to VGA_B<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q             165   0.581   2.834  VGA_SQ/posy_1 (VGA_SQ/posy_1)
+     LUT6:I0->O            1   0.254   0.958  VGA_SQ/Mmux_posy[4]_X_8_o_wide_mux_9060_OUT_91 (VGA_SQ/Mmux_posy[4]_X_8_o_wide_mux_9060_OUT_91)
+     LUT6:I2->O            1   0.254   0.000  VGA_SQ/Mmux_posy[4]_X_8_o_wide_mux_9060_OUT_4 (VGA_SQ/Mmux_posy[4]_X_8_o_wide_mux_9060_OUT_4)
+     MUXF7:I0->O           1   0.163   0.958  VGA_SQ/Mmux_posy[4]_X_8_o_wide_mux_9060_OUT_2_f7 (VGA_SQ/posy[4]_X_8_o_wide_mux_9060_OUT<0>)
+     LUT6:I2->O            1   0.254   0.958  VGA_SQ/Mmux_posx[4]_X_8_o_wide_mux_9070_OUT_91 (VGA_SQ/Mmux_posx[4]_X_8_o_wide_mux_9070_OUT_91)
+     LUT6:I2->O            1   0.254   0.000  VGA_SQ/Mmux_posx[4]_X_8_o_wide_mux_9070_OUT_4 (VGA_SQ/Mmux_posx[4]_X_8_o_wide_mux_9070_OUT_4)
+     MUXF7:I0->O           4   0.163   1.032  VGA_SQ/Mmux_posx[4]_X_8_o_wide_mux_9070_OUT_2_f7 (VGA_SQ/posx[4]_X_8_o_wide_mux_9070_OUT<0>)
+     LUT5:I2->O            1   0.235   0.681  VGA_Control/Mmux_BLUE21 (VGA_B_1_OBUF)
+     OBUF:I->O                 2.912          VGA_B_1_OBUF (VGA_B<1>)
+    ----------------------------------------
+    Total                     12.491ns (5.070ns logic, 7.421ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'VGA_SQ/posy_2_G'
+  Total number of paths / destination ports: 148 / 6
+-------------------------------------------------------------------------
+Offset:              10.479ns (Levels of Logic = 7)
+  Source:            VGA_SQ/posy_2 (LATCH)
+  Destination:       VGA_B<1> (PAD)
+  Source Clock:      VGA_SQ/posy_2_G falling
+
+  Data Path: VGA_SQ/posy_2 to VGA_B<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              37   0.581   2.034  VGA_SQ/posy_2 (VGA_SQ/posy_2)
+     LUT6:I1->O            1   0.254   0.000  VGA_SQ/Mmux_posy[4]_X_8_o_wide_mux_9060_OUT_4 (VGA_SQ/Mmux_posy[4]_X_8_o_wide_mux_9060_OUT_4)
+     MUXF7:I0->O           1   0.163   0.958  VGA_SQ/Mmux_posy[4]_X_8_o_wide_mux_9060_OUT_2_f7 (VGA_SQ/posy[4]_X_8_o_wide_mux_9060_OUT<0>)
+     LUT6:I2->O            1   0.254   0.958  VGA_SQ/Mmux_posx[4]_X_8_o_wide_mux_9070_OUT_91 (VGA_SQ/Mmux_posx[4]_X_8_o_wide_mux_9070_OUT_91)
+     LUT6:I2->O            1   0.254   0.000  VGA_SQ/Mmux_posx[4]_X_8_o_wide_mux_9070_OUT_4 (VGA_SQ/Mmux_posx[4]_X_8_o_wide_mux_9070_OUT_4)
+     MUXF7:I0->O           4   0.163   1.032  VGA_SQ/Mmux_posx[4]_X_8_o_wide_mux_9070_OUT_2_f7 (VGA_SQ/posx[4]_X_8_o_wide_mux_9070_OUT<0>)
+     LUT5:I2->O            1   0.235   0.681  VGA_Control/Mmux_BLUE21 (VGA_B_1_OBUF)
+     OBUF:I->O                 2.912          VGA_B_1_OBUF (VGA_B<1>)
+    ----------------------------------------
+    Total                     10.479ns (4.816ns logic, 5.663ns route)
+                                       (46.0% logic, 54.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLOCK_24
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK_24       |   15.433|         |         |         |
+RESET_N        |   11.384|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock VGA_SQ/GND_8_o_GND_8_o_OR_103_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK_24       |         |         |   18.380|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock VGA_SQ/GND_8_o_GND_8_o_OR_711_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK_24       |         |         |   18.348|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock VGA_SQ/posx_2_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK_24       |         |         |   19.594|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock VGA_SQ/posy_2_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK_24       |         |         |   19.792|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 59.00 secs
+Total CPU time to Xst completion: 59.09 secs
+ 
+--> 
+
+Total memory usage is 318444 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  257 (   0 filtered)
+Number of infos    :   23 (   0 filtered)
+

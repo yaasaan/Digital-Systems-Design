@@ -1,0 +1,20 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+T42=1
+Built-in symbols=0
+[COMPILESTATUS|.\src\T42.vhd]
+FileTimeLow=30961761
+Status=Compiled
+[COMPILESTATUS|.\src\TestBench\t42_TB.vhd]
+FileTimeLow=30961760
+Status=Compiled
+[COMPILESTATUS|.\src\TestBench\t42_TB_runtest.do]
+FileTimeLow=30961760
+Status=Modified
+[COMPILESTATUS|.\src\untitled.asdb]
+FileTimeLow=30961763
+Status=Modified
+[COMPILESTATUS|.\src\untitled.awc]
+FileTimeLow=30961763
+Status=Modified
+[Gui config]
+RunFor=100 ns
