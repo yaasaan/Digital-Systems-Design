@@ -1,6 +1,6 @@
 # Digital Systems Design
 
-This repository contains my homework assignments and project submissions for the **"Digital Systems Design"** course, held in **"Fall 2021"**.
+This repository contains my homework assignments and project submissions for the **"Digital Systems Design"** course, held in **"Spring 2022"**.
 
 The course consisted of:
 - [**3 Practical Homeworks**](https://github.com/yaasaan/Digital-Systems-Design/tree/main/HWs)
